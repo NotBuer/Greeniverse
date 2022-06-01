@@ -1,0 +1,9 @@
+.logo{
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.grow {
+    flex-grow: 1;
+    background: pink;
+}

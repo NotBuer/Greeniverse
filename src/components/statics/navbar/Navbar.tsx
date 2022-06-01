@@ -14,12 +14,11 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import './Navbar.css'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        grow: {
-            flexGrow: 1,
-        },
+
         menuButton: {
             marginRight: theme.spacing(2),
         },
@@ -27,6 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
             display: 'none',
             [theme.breakpoints.up('sm')]: {
                 display: 'block',
+
             },
         },
         search: {
@@ -36,12 +36,12 @@ const useStyles = makeStyles((theme: Theme) =>
             '&:hover': {
                 backgroundColor: alpha(theme.palette.common.white, 0.25),
             },
-            marginRight: theme.spacing(2),
+            marginRight: theme.spacing(3),
             marginLeft: 0,
-            width: '100%',
+            width: '20%',
             [theme.breakpoints.up('sm')]: {
-                marginLeft: theme.spacing(3),
-                width: 'auto',
+                marginLeft: theme.spacing(20),
+                width: '20',
             },
         },
         searchIcon: {
@@ -121,6 +121,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
         </Menu>
     );
+    
 
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
@@ -149,6 +150,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
                 <p>Notifications</p>
             </MenuItem>
+            
             <MenuItem onClick={handleProfileMenuOpen}>
                 <IconButton
                     aria-label="account of current user"
@@ -164,12 +166,12 @@ export default function PrimarySearchAppBar() {
     );
 
     return (
-        <div className={classes.grow}>
+        <div className='grow'>
             <AppBar position="static">
                 <Toolbar>
                    
                     <Typography className={classes.title} variant="h6" noWrap>
-                        Greeniverse
+                        <img className='logo' src="https://i.imgur.com/iII8d5B.png" alt="foto do logo" />
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
@@ -184,7 +186,7 @@ export default function PrimarySearchAppBar() {
                             inputProps={{ 'aria-label': 'search' }}
                         />
                     </div>
-                    <div className={classes.grow} />
+                    <div className='grow'/>
                     <div className={classes.sectionDesktop}>
                         <IconButton aria-label="show 4 new mails" color="inherit">
                             <Badge badgeContent={4} color="secondary">
@@ -197,6 +199,7 @@ export default function PrimarySearchAppBar() {
                             </Badge>
                         </IconButton>
                         <IconButton
+                        
                             edge="end"
                             aria-label="account of current user"
                             aria-controls={menuId}
@@ -223,6 +226,7 @@ export default function PrimarySearchAppBar() {
                         className={classes.menuButton}
                         color="inherit"
                         aria-label="open drawer"
+                        
                     >
                         <MenuIcon />
                     </IconButton>

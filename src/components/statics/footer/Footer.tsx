@@ -11,11 +11,11 @@ import './Footer.css';
 function Footer(){
     return(
         <>
-        <Box px={{ xs: 3, sm: 10}} py={{xs: 5, sm:10}} style={{backgroundColor: "black", color: "white"}}>
+        <Box px={{ xs: 2, sm: 8}} py={{xs: 4, sm:8}} style={{backgroundColor: "#5B8866", color: "white"}}>
             <Container maxWidth='lg'> 
             <Box display="flex" alignItems="center" justifyContent="center">
                             <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                <FacebookIcon style={{ fontSize: 60, color: "white" }} />
+                                <FacebookIcon style={{ fontSize: 60, color: "primary" }} />
                             </a>
                             <a href="https://www.instagram.com/generationbrasil/" target="_blank">
                                 <InstagramIcon style={{ fontSize: 60, color: "white" }} />

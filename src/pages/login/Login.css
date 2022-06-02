@@ -1,0 +1,17 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.texts1{
+    font-weight: bold !important;
+}
+
+.image{
+    background-image: url(https://i.imgur.com/iII8d5B.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh; /* Fixed at 100vh to center */
+    background-size: 75%;
+    background-position: center;
+    border-radius: 10%;
+}

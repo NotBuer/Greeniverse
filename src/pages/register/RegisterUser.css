@@ -1,0 +1,18 @@
+.img2{
+  background-image: url(https://i.imgur.com/iII8d5B.png);
+  background-repeat: no-repeat;
+  width: 100vh;
+  height: 100vh; 
+  background-size: 75%;
+  background-position: center;
+  border-radius: 0;
+  background-color: #A6C954;
+}
+
+.text2{
+  font-weight: bold !important;
+}
+
+.btnCancel{
+  margin-right: 20px !important;
+}

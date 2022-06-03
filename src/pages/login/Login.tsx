@@ -50,7 +50,6 @@ function Login() {
 
     return (
         <>
-            <form onSubmit={onSubmit}>
             <main>
                 <section>
                     <article id='form_login'>
@@ -60,11 +59,12 @@ function Login() {
 
                         <Typography variant='h3' gutterBottom component='h3' className='text2'> Entrar </Typography>
 
-                        <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
-                        <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
+                        <form onSubmit={onSubmit} id='form_login'>
+                            <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
+                            <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
 
-
-                        <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
+                            <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
+                        </form>
 
                         <Box borderBottom={1}>
                             <Link to='/registeruser'>
@@ -95,7 +95,6 @@ function Login() {
                     </article>
                 </section>
             </main>
-            </form>
         </>
     );
 }

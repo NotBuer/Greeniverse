@@ -13,10 +13,6 @@ main {
     background-color: #d1e099;
 }
 
-.imglogo{
-    width: 100px;
-    align-self: start;
-}
 main section {
     width: 70%;
     display: flex;
@@ -37,18 +33,20 @@ main section #form_login{
     align-items: center;
     background-color:white;
     border-radius: 20px;
-    
 }
 
 main section #img{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #5b8866;
     border-radius: 20px;
+}
 
+.imglogo{
+    width: 100px;
+    align-self: start;
 }
 
 #Iconback {
@@ -74,15 +72,13 @@ main section #img{
     text-align:center ;
     justify-content: center;
     color: black; 
-    
 }
 
 #img img{
     width: 70%;
 }
 
-@media screen and (max-width:1023px) {
-    
+@media screen and (max-width:1023px) { 
     main section #img{
         display: none;
     }

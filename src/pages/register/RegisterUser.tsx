@@ -88,7 +88,7 @@ function RegisterUser(){
                         <TextField
                             value={user.email}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='email' label='Email' variant='outlined' name='email' margin='normal' type='email' fullWidth />
+                            id='email' label='E-mail' variant='outlined' name='email' margin='normal' type='email' fullWidth />
                         
                         <TextField
                             value={user.password}

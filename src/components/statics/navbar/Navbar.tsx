@@ -1,8 +1,16 @@
 import React from 'react';
 import './Navbar.css'
+import lupa from '../../../assets/navbar/lupa-icon.png'
+import logo from '../../../assets/navbar/logo.png'
+import profile from '../../../assets/navbar/profile.png'
+import bag from '../../../assets/navbar/shopping-bag.png'
+
+
+
 
 function Navbar() {
     return (
+      
       <nav>
 
         <div className="top-promo-banner">
@@ -11,20 +19,20 @@ function Navbar() {
 
         <header className="top-nav-bar">
 
-          <img className="logo" src="./src/img/logo.png" alt="logo"/>
+          <img className="logo" src={logo} alt="logo"/>
 
           <form className="search-box">
-            <img className="lupa-icon" src="./src/img/lupa-icon.png" alt="lupa"/>
+            <img className="lupa-icon" src={lupa} alt="lupa"/>
             <input type="text" placeholder="O que voce está procurando?"/>
             <button type="submit">Buscar</button>
           </form>
 
           <a href="/">Minha conta
-            <img className="nav-icon-1" src="./src/img/profile.png" alt="cart"/>
+            <img className="nav-icon-1" src={profile} alt="user"/>
           </a>
 
           <a href="/"> Minha sacola
-            <img className="nav-icon-2" src="./src/img/shopping-bag.png" alt="user"/>
+            <img className="nav-icon-2" src={bag} alt="cart"/>
           </a>
 
         </header>

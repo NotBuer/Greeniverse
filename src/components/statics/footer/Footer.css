@@ -23,7 +23,6 @@ ul{
 	background-color: #f6f6f6
     ;
     padding-top: 30px;
-
 }
 .footer-col{
    width: 25%;
@@ -83,15 +82,11 @@ ul{
     margin-top: 30px;
     justify-content: center;
     align-items:  center;
-    
-    
 }
 .footer-col .social-links a:hover{
 	color: white;
 	background-color: #5b8866;
 }
-
-/responsive/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;

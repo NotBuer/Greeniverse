@@ -1,239 +1,54 @@
 import React from 'react';
-import { alpha, makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import './Navbar.css'
+import lupa from '../../../assets/navbar/lupa-icon.png'
+import logo from '../../../assets/navbar/logo.png'
+import profile from '../../../assets/navbar/profile.png'
+import bag from '../../../assets/navbar/shopping-bag.png'
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
 
-        menuButton: {
-            marginRight: theme.spacing(2),
-        },
-        title: {
-            display: 'none',
-            [theme.breakpoints.up('sm')]: {
-                display: 'block',
 
-            },
-        },
-        search: {
-            position: 'relative',
-            borderRadius: theme.shape.borderRadius,
-            backgroundColor: alpha(theme.palette.common.white, 0.15),
-            '&:hover': {
-                backgroundColor: alpha(theme.palette.common.white, 0.25),
-            },
-            marginRight: theme.spacing(3),
-            marginLeft: 0,
-            width: '20%',
-            [theme.breakpoints.up('sm')]: {
-                marginLeft: theme.spacing(20),
-                width: '20',
-            },
-        },
-        searchIcon: {
-            padding: theme.spacing(0, 2),
-            height: '100%',
-            position: 'absolute',
-            pointerEvents: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-        },
-        inputRoot: {
-            color: 'inherit',
-        },
-        inputInput: {
-            padding: theme.spacing(1, 1, 1, 0),
-            // vertical padding + font size from searchIcon
-            paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-            transition: theme.transitions.create('width'),
-            width: '100%',
-            [theme.breakpoints.up('md')]: {
-                width: '20ch',
-            },
-        },
-        sectionDesktop: {
-            display: 'none',
-            [theme.breakpoints.up('md')]: {
-                display: 'flex',
-            },
-        },
-        sectionMobile: {
-            display: 'flex',
-            [theme.breakpoints.up('md')]: {
-                display: 'none',
-            },
-        },
-    }),
-);
 
-export default function PrimarySearchAppBar() {
-    const classes = useStyles();
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState<null | HTMLElement>(null);
-
-    const isMenuOpen = Boolean(anchorEl);
-    const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-    const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleMobileMenuClose = () => {
-        setMobileMoreAnchorEl(null);
-    };
-
-    const handleMenuClose = () => {
-        setAnchorEl(null);
-        handleMobileMenuClose();
-    };
-
-    const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-        setMobileMoreAnchorEl(event.currentTarget);
-    };
-
-    const menuId = 'primary-search-account-menu';
-    const renderMenu = (
-        <Menu
-            anchorEl={anchorEl}
-            anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-            id={menuId}
-            keepMounted
-            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-            open={isMenuOpen}
-            onClose={handleMenuClose}
-        >
-            <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-            <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-        </Menu>
-    );
-    
-
-    const mobileMenuId = 'primary-search-account-menu-mobile';
-    const renderMobileMenu = (
-        <Menu
-            anchorEl={mobileMoreAnchorEl}
-            anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-            id={mobileMenuId}
-            keepMounted
-            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-            open={isMobileMenuOpen}
-            onClose={handleMobileMenuClose}
-        >
-            <MenuItem>
-                <IconButton aria-label="show 4 new mails" color="inherit">
-                    <Badge badgeContent={4} color="secondary">
-                        <MailIcon />
-                    </Badge>
-                </IconButton>
-                <p>Messages</p>
-            </MenuItem>
-            <MenuItem>
-                <IconButton aria-label="show 11 new notifications" color="inherit">
-                    <Badge badgeContent={11} color="secondary">
-                        <NotificationsIcon />
-                    </Badge>
-                </IconButton>
-                <p>Notifications</p>
-            </MenuItem>
-            
-            <MenuItem onClick={handleProfileMenuOpen}>
-                <IconButton
-                    aria-label="account of current user"
-                    aria-controls="primary-search-account-menu"
-                    aria-haspopup="true"
-                    color="inherit"
-                >
-                    <AccountCircle />
-                </IconButton>
-                <p>Profile</p>
-            </MenuItem>
-        </Menu>
-    );
-
+function Navbar() {
     return (
-        <div className='grow'>
-            <AppBar position="static">
-                <Toolbar>
-                   
-                    <Typography className={classes.title} variant="h6" noWrap>
-                        <img className='logo' src="https://i.imgur.com/iII8d5B.png" alt="foto do logo" />
-                    </Typography>
-                    <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                            <SearchIcon />
-                        </div>
-                        <InputBase
-                            placeholder="Search…"
-                            classes={{
-                                root: classes.inputRoot,
-                                input: classes.inputInput,
-                            }}
-                            inputProps={{ 'aria-label': 'search' }}
-                        />
-                    </div>
-                    <div className='grow'/>
-                    <div className={classes.sectionDesktop}>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={4} color="secondary">
-                                <MailIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton aria-label="show 17 new notifications" color="inherit">
-                            <Badge badgeContent={17} color="secondary">
-                                <NotificationsIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton
-                        
-                            edge="end"
-                            aria-label="account of current user"
-                            aria-controls={menuId}
-                            aria-haspopup="true"
-                            onClick={handleProfileMenuOpen}
-                            color="inherit"
-                        >
-                            <AccountCircle />
-                        </IconButton>
-                    </div>
-                    <div className={classes.sectionMobile}>
-                        <IconButton
-                            aria-label="show more"
-                            aria-controls={mobileMenuId}
-                            aria-haspopup="true"
-                            onClick={handleMobileMenuOpen}
-                            color="inherit"
-                        >
-                            <MoreIcon />
-                        </IconButton>
-                    </div>
-                    <IconButton
-                        edge="end"
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="open drawer"
-                        
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-            {renderMobileMenu}
-            {renderMenu}
+      
+      <nav>
+
+        <div className="top-promo-banner">
+            <span>Frete grátis nas compras acima de R$200,00</span>
         </div>
-    );
+
+        <header className="top-nav-bar">
+
+          <img className="logo" src={logo} alt="logo"/>
+
+          <form className="search-box">
+            <img className="lupa-icon" src={lupa} alt="lupa"/>
+            <input type="text" placeholder="O que voce está procurando?"/>
+            <button type="submit">Buscar</button>
+          </form>
+
+          <a href="/">Minha conta
+            <img className="nav-icon-1" src={profile} alt="user"/>
+          </a>
+
+          <a href="/"> Minha sacola
+            <img className="nav-icon-2" src={bag} alt="cart"/>
+          </a>
+
+        </header>
+
+      <div className="botton-menu-bar">
+        <ul className="botton-list">
+          <li><a href="/">Ofertas</a></li>
+          <li><a href="/">Hortifruti</a></li>
+          <li><a href="/">Mercearia</a></li>
+          <li><a href="/">Laticínios</a></li>
+          <li><a href="/">Ovos e Carnes</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  )
 }
+
+export default Navbar;

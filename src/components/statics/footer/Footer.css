@@ -3,6 +3,7 @@ body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
+
 *{
 	margin:0;
 	padding:0;
@@ -91,16 +92,17 @@ ul{
 	background-color: #5b8866;
 }
 
-/responsive/
+
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+	}
 }
-}
+
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
-}
+	}
 }
 

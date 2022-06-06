@@ -1,6 +1,16 @@
+nav{
+  display: flex;
+  background-color: #F6F6F6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
 .top-promo-banner{
     display: flex;
     justify-content: center;
+    width: 100%;
     background-color: #5b8866;
     padding: 2px;
   }
@@ -14,14 +24,16 @@
     background-color: #F6F6F6;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
+    margin: 0 auto;
     align-items:center ;
     height: 100px;
-    width: 100vw;
+    width: 1000px;
+
   }
   
   .top-nav-bar .logo{
     width: 100px;
-    margin-left: 350px;
   }
   
   .search-box{
@@ -30,7 +42,6 @@
     width: 450px;
     height: 35px;
     border-radius: 60px;
-    margin-left: 100px;
   }
   
   .lupa-icon{
@@ -80,11 +91,12 @@
   .nav-icon-2{
     height: 30px;
     width: 30px;
-    margin-right: 350px;
   }
   
   .botton-menu-bar{
+    display: flex;
     background-color: white;
+    width: 100%;
     height: 30px;
     box-shadow: 0px 2px #e4e4e4;
   }
@@ -93,14 +105,55 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin: 0px 353px;
-   margin-top: 10px;
+   justify-items: center;
+   margin: 0 auto;
    list-style: none;
+   width: 1000px;
   }
   
   .botton-list a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     text-decoration: none;
     color: black;
     font-size: 14px;
   }
   
+  @media (max-width: 1060px){
+
+
+  }
+
+
+
+/*
+  @media (max-width: 1633px){
+    .search-box{
+      width: 350px;
+    }
+
+    .search-box button{
+      padding: 10px 20px;
+    }
+
+  }
+
+  @media (max-width: 1429px){
+    header a{
+      gap: 0px;
+      font-size: 0px;
+    }
+  }
+
+  @media (max-width: 1237px){
+    .search-box{
+      width: 300px;
+    }
+
+    .search-box button{
+      padding: 10px 10px;
+    }
+  }
+  */

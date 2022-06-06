@@ -88,18 +88,12 @@ ul{
 	color: white;
 	background-color: #5b8866;
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> cb8714014dc0861b4d4d46b742183546381ebe28
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
 	}
 }
-
 @media(max-width: 574px){
   .footer-col{
     width: 100%;

@@ -18,7 +18,10 @@ function RegisterUser() {
           id: 0,
           name: "",
           email: "",
-          password: ""
+          password: "",
+          address: "",
+          telephone: "",
+          userType: "",
         }
     );
 
@@ -27,17 +30,17 @@ function RegisterUser() {
             id: 1,
             name: "",
             email: "",
-            password: ""
-
+            password: "",
+            address: "",
+            telephone: "",
+            userType: "",
         }
     );
 
     useEffect(() => {
-
         if(userResult .id === 0){
             navigate('/login');
         }
-
     }, [userResult , navigate]);
 
     function ConfirmPasswordHandle(e: ChangeEvent<HTMLInputElement>){
@@ -45,7 +48,6 @@ function RegisterUser() {
     }
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>){
-
         setUser({
             ...user,
             [e.target.name]: e.target.value
@@ -53,14 +55,14 @@ function RegisterUser() {
     }
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>){
-
         e.preventDefault();
         
         if(confirmPassword === user.password){
             try {
-                await registerUser(`/api/User`, user, setUserResult)
+                await registerUser(`/api/User/email`, user, setUserResult)
                 alert('Usuario cadastrado com sucesso')
             } catch (error) {
+                console.log(error)
                 alert('Usuario já cadastrado, tente outro email!')
             }
 
@@ -103,7 +105,7 @@ function RegisterUser() {
                         <TextField
                             value={confirmPassword}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => ConfirmPasswordHandle(e)}
-                            id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='Confirmpassword' margin='normal' type='password' size='small' />
+                            id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='ConfirmPassword' margin='normal' type='password' size='small' />
 
                             
                             <Box marginY={2} textAlign='center' className='button1'>
@@ -126,7 +128,7 @@ function RegisterUser() {
             </section>
         </main>
     </>
-        );
+    );
 }
 
 export default RegisterUser;

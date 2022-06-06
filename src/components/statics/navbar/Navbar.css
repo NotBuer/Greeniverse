@@ -34,6 +34,7 @@ nav{
   
   .top-nav-bar .logo{
     width: 100px;
+    margin: 0 auto;
   }
   
   .search-box{
@@ -76,6 +77,7 @@ nav{
   header a{
     text-decoration: none;
     color: black;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -122,8 +124,50 @@ nav{
   }
   
   @media (max-width: 1060px){
+  
+    .top-nav-bar{
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+    }
 
+    .search-box{
+      width: 400px;
+    }
 
+    .search-box button{
+      padding: 10px 20px;
+    }
+    
+  }
+
+  @media (max-width: 890px) {
+    .search-box{
+      width: 300px;
+    }
+
+    .search-box button{
+      padding: 10px 12px;
+    }
+
+    header a{
+      gap: 10px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 750px){
+    .top-nav-bar .logo{
+      display: none;
+    }
+
+    .search-box{
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 610px){
+    
   }
 
 

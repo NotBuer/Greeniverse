@@ -4,7 +4,7 @@ interface User {
   email?: string| null;
   password?: string| null;
   address?: string| null;
-  telephone?: string| null;
+  phone?: string| null;
   userType?: string| null;
 }
 

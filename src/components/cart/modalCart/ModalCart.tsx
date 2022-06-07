@@ -1,5 +1,5 @@
 import './ModalCart.css'
-import React from 'react'
+/*import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { Button } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
@@ -74,4 +74,4 @@ function ModalCart() {
         </div>
     );
 }
-export default ModalCart;
+export default ModalCart;*/

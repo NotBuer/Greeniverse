@@ -1,42 +1,55 @@
-.top-promo-banner{
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #F6F6F6;
+}
+
+.top-promo-banner {
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #5b8866;
     padding: 2px;
+    width: 100%;
+    background-color: #5b8866;
   }
   
-  .top-promo-banner span{
-    color: white;
+  .top-promo-banner span {
     font-size: 13px;
+    color: white;
   }
   
   .top-nav-bar{
-    background-color: #F6F6F6;
     display: flex;
+    align-items:center;
     justify-content: space-between;
-    align-items:center ;
+    justify-items: center;
+    margin: 0 auto;
     height: 100px;
-    width: 100vw;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #F6F6F6;
   }
   
   .top-nav-bar .logo{
     width: 100px;
-    margin-left: 350px;
   }
   
   .search-box{
     display: flex;
-    background-color: white;
-    width: 450px;
     height: 35px;
+    width: 450px;
     border-radius: 60px;
-    margin-left: 100px;
+    background-color: white;
+
   }
   
   .lupa-icon{
     align-self: center;
     padding: 10px 20px;
-    width: 20px;
+    width: 55px;
   }
   
   .search-box input{
@@ -80,11 +93,12 @@
   .nav-icon-2{
     height: 30px;
     width: 30px;
-    margin-right: 350px;
   }
   
   .botton-menu-bar{
+    display: flex;
     background-color: white;
+    width: 100%;
     height: 30px;
     box-shadow: 0px 2px #e4e4e4;
   }
@@ -93,14 +107,147 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin: 0px 353px;
-   margin-top: 10px;
+   justify-items: center;
+   margin: 0 auto;
    list-style: none;
+   width: 1000px;
   }
   
   .botton-list a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     text-decoration: none;
     color: black;
     font-size: 14px;
   }
+
+@media (max-width: 375px){
+  .top-nav-bar .logo{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
   
+  /*
+  @media (max-width: 1060px){
+  
+    .top-nav-bar{
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .search-box{
+      width: 400px;
+    }
+
+    .search-box button{
+      padding: 10px 20px;
+    }
+    
+  }
+
+  @media (max-width: 890px) {
+    .search-box{
+      width: 300px;
+    }
+
+    .search-box input{
+      font-size: 13px;
+    }
+
+    .search-box button{
+      padding: 10px 12px;
+    }
+
+    header a{
+      gap: 10px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 750px){
+    .top-nav-bar .logo{
+      display: none;
+    }
+
+    .search-box{
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 610px){
+    header a{
+      display: flex;
+      font-size: 12px;
+      gap: 5px;
+    }
+
+  }
+  */
+
+
+
+  @media (max-width: 375px){
+    .search-box input{
+      flex: 1;
+      border: none;
+      outline: none;
+      border-radius: 60px;
+    }
+    
+    .search-box button{
+      background-color: #f0f0f0;
+      background-image: "";
+      width: 35px;
+      height: 35px;
+      padding: 10px 10px;
+      border-radius: 60px;
+      font-size: 0px;
+    }
+  }
+
+
+
+/*
+  @media (max-width: 1633px){
+    .search-box{
+      width: 350px;
+    }
+
+    .search-box button{
+      padding: 10px 20px;
+    }
+
+  }
+
+  @media (max-width: 1429px){
+    header a{
+      gap: 0px;
+      font-size: 0px;
+    }
+  }
+
+  @media (max-width: 1237px){
+    .search-box{
+      width: 300px;
+    }
+
+    .search-box button{
+      padding: 10px 10px;
+    }
+  }
+  */

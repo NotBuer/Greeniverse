@@ -18,10 +18,20 @@ function RegisterUser() {
 
     const [user, setUser] = useState<User>(
         {
+<<<<<<< HEAD
             id: 0,
             name: "",
             email: "",
             password: ""
+=======
+          id: 0,
+          name: "",
+          email: "",
+          password: "",
+          address: "",
+          telephone: "",
+          userType: "",
+>>>>>>> dffc203b1a8b9b66925b49bc154515242e198709
         }
     );
 
@@ -30,40 +40,58 @@ function RegisterUser() {
             id: 1,
             name: "",
             email: "",
-            password: ""
-
+            password: "",
+            address: "",
+            telephone: "",
+            userType: "",
         }
     );
 
     useEffect(() => {
+<<<<<<< HEAD
 
         if (userResult.id === 0) {
             navigate('/login');
         }
 
     }, [userResult, navigate]);
+=======
+        if(userResult .id === 0){
+            navigate('/login');
+        }
+    }, [userResult , navigate]);
+>>>>>>> dffc203b1a8b9b66925b49bc154515242e198709
 
     function ConfirmPasswordHandle(e: ChangeEvent<HTMLInputElement>) {
         setConfirmPassword(e.target.value)
     }
 
+<<<<<<< HEAD
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
 
+=======
+    function updatedModel(e: ChangeEvent<HTMLInputElement>){
+>>>>>>> dffc203b1a8b9b66925b49bc154515242e198709
         setUser({
             ...user,
             [e.target.name]: e.target.value
         })
     }
 
+<<<<<<< HEAD
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
 
+=======
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>){
+>>>>>>> dffc203b1a8b9b66925b49bc154515242e198709
         e.preventDefault();
 
         if (confirmPassword === user.password) {
             try {
-                await registerUser(`/api/User`, user, setUserResult)
+                await registerUser(`/api/User/email`, user, setUserResult)
                 alert('Usuario cadastrado com sucesso')
             } catch (error) {
+                console.log(error)
                 alert('Usuario já cadastrado, tente outro email!')
             }
 
@@ -103,10 +131,17 @@ function RegisterUser() {
                                 id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
 
 
+<<<<<<< HEAD
                             <TextField
                                 value={confirmPassword}
                                 onChange={(e: ChangeEvent<HTMLInputElement>) => ConfirmPasswordHandle(e)}
                                 id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='Confirmpassword' margin='normal' type='password' size='small' />
+=======
+                        <TextField
+                            value={confirmPassword}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => ConfirmPasswordHandle(e)}
+                            id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='ConfirmPassword' margin='normal' type='password' size='small' />
+>>>>>>> dffc203b1a8b9b66925b49bc154515242e198709
 
 
                             <Box  marginY={2} textAlign='center' className='buttons'>
@@ -127,6 +162,7 @@ function RegisterUser() {
                                     <GoogleIcon style={{ fontSize: 40, color: "red" }} />
                                 </a>
 
+<<<<<<< HEAD
                                 <a href="" target="black" rel="noopener noreferrer">
                                     <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
                                 </a>
@@ -143,6 +179,11 @@ function RegisterUser() {
                 </section>
             </main>
         </>
+=======
+            </section>
+        </main>
+    </>
+>>>>>>> dffc203b1a8b9b66925b49bc154515242e198709
     );
 }
 

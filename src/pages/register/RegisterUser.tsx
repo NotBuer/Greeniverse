@@ -23,8 +23,8 @@ function RegisterUser() {
             email: '',
             password: '',
             address: '',
-            phone: '',
-            userType: ''
+            telephone: '',
+            userType: 'IndividualPerson'
         }
     );
 
@@ -35,13 +35,13 @@ function RegisterUser() {
             email: '',
             password: '',
             address: '',
-            phone: '',
+            telephone: '',
             userType: ''
         }
     );
 
     useEffect(() => {
-        if (userResult.id === 0) {
+        if (userResult.id != 1) {
             navigate('/login');
         }
     }, [userResult, navigate]);

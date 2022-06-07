@@ -4,6 +4,9 @@ import { registerUser } from "../../services/Services";
 import User from "../../models/User";
 import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } from '@material-ui/core';
 import { Box } from "@mui/material";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GoogleIcon from '@mui/icons-material/Google';
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './RegisterUser.css';
 
@@ -14,20 +17,20 @@ function RegisterUser() {
     const [confirmPassword, setConfirmPassword] = useState<String>("")
 
     const [user, setUser] = useState<User>(
-        {   
-            // id: 0,
+        {
+            id: 0,
             name: '',
             email: '',
             password: '',
             address: '',
             phone: '',
-            userType: ''      
+            userType: ''
         }
     );
 
     const [userResult, setUserResult] = useState<User>(
         {
-            // id: 1,
+            id: 1,
             name: '',
             email: '',
             password: '',
@@ -42,6 +45,7 @@ function RegisterUser() {
             navigate('/login');
         }
     }, [userResult, navigate]);
+
 
     function ConfirmPasswordHandle(e: ChangeEvent<HTMLInputElement>) {
         setConfirmPassword(e.target.value)
@@ -83,7 +87,7 @@ function RegisterUser() {
                             <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
                         </a>
 
-                        <Typography variant='h3' gutterBottom component='h3' className='text3'> Cadastrar </Typography>
+                        <Typography variant='h3' component='h3' className='text3'> Cadastrar </Typography>
 
                         <form onSubmit={onSubmit} id='form_register'>
 
@@ -108,7 +112,8 @@ function RegisterUser() {
                                 id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='ConfirmPassword' margin='normal' type='password' size='small' />
 
 
-                            <Box marginY={2} textAlign='center' className='button1'>
+
+                            <Box marginY={2} textAlign='center' className='buttons'>
                                 <Link to='/login' className='text-decorator-none'>
                                     <Button variant='outlined' className='buttonRegister'>
                                         Cancelar
@@ -120,6 +125,21 @@ function RegisterUser() {
                                 </Button>
                             </Box>
 
+                            <Box className='Icons' display='flex' justifyContent='center' marginTop={3}>
+
+                                <a href="" target="black" rel="noopener noreferrer">
+                                    <GoogleIcon style={{ fontSize: 40, color: "red" }} />
+                                </a>
+
+
+                                <a href="" target="black" rel="noopener noreferrer">
+                                    <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
+                                </a>
+
+                                <a href="" target="black" rel="noopener noreferrer">
+                                    <TwitterIcon style={{ fontSize: 40, color: "blue" }} />
+                                </a>
+                            </Box>
 
                         </form>
 

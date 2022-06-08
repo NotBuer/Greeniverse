@@ -6,48 +6,33 @@ import profile from '../../../assets/navbar/profile.png'
 import bag from '../../../assets/navbar/shopping-bag.png'
 
 
-
-
 function Navbar() {
-    return (
-      
-      <nav>
+  return (
 
-        <div className="top-promo-banner">
-            <span>Frete grátis nas compras acima de R$200,00</span>
-        </div>
+      <nav id='navbar'>
 
-        <header className="top-nav-bar">
+        <section id='logo'>
+          <a href="#" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
+        </section>
 
-          <img className="logo" src={logo} alt="logo"/>
+        <section id='menu'>
+          <a href="#home">Home</a>
+          <a href="#features">Benefícios</a>
+          <a href="#products">Produtos</a>
+          <a href="/">Seja um fornecedor</a>
+          <a href="/">Indique um amigo</a>
+          <a href="./">Sobre nós</a>
+        </section>
 
-          <form className="search-box">
-            <img className="lupa-icon" src={lupa} alt="lupa"/>
-            <input type="text" placeholder="O que voce está procurando?"/>
-            <button type="submit">Buscar</button>
-          </form>
+        <section id='icons'>
+          <i className="fas fa-bars" id="menu-btn"></i>
+          <i className="fas fa-search" id="search-btn"></i>
+          <i className="fas fa-shopping-cart" id="cart-btn"></i>
+          <i className="fas fa-user" id="login-btn"></i>
+        </section>
 
-          <a href="/">Minha conta
-            <img className="nav-icon-1" src={profile} alt="user"/>
-          </a>
+      </nav>
 
-          <a href="/"> Minha sacola
-            <img className="nav-icon-2" src={bag} alt="cart"/>
-          </a>
-
-        </header>
-
-      <div className="botton-menu-bar">
-        <ul className="botton-list">
-          <li><a href="/">Ofertas</a></li>
-          <li><a href="/">Hortifruti</a></li>
-          <li><a href="/">Mercearia</a></li>
-          <li><a href="/">Laticínios</a></li>
-          <li><a href="/">Ovos e Carnes</a></li>
-        </ul>
-      </div>
-
-    </nav>
   )
 }
 

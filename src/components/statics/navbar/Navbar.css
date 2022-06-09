@@ -1,4 +1,4 @@
-/* Navbar Global */
+/* Navbar-Global */
 
 #navbar{
   position: fixed;
@@ -7,68 +7,193 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding:  20px 9%;
   background-color: #fff;
   box-shadow: var(--box-shadow);
 }
 
-#navbar #logo{
+/*Logo-section*/
+
+#logo-section #logo{
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 3rem;
+  font-size: 26px;
   font-weight: bolder;
   color: var(--green);
 }
 
-/**
-#navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100px;
+#logo-section img {
+  width: 50px;
 }
 
-/* Primeira Section 
-#logo a {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: bolder;
-  color: var(--green);
+/*Menu-list*/
 
-  text-decoration: none;
-}
-
-#logo img {
-  width: 4.5rem;
-}
-
-/* Segunda Section 
-#menu {
-  display: flex;
-  flex-direction: row;
-}
-
-
-
-#menu a {
-  font-family: 'Poppins', sans-serif;
-
-  font-size: 17px;
-  font-weight: 300;
+#menu a{
+  font-size: 16px;
+  margin: 0 16px;
   color: var(--black);
-
-  margin: 5px 10px;
-
-  text-decoration: none;
 }
 
-#menu a:hover {
+#menu a:hover{
+  color: var(--green);
+  font-size: 18px;
+}
+
+/*Icons-section*/
+
+#icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icons i{
+  height: 45px;
+  width: 45px;
+  line-height: 3rem;
+  border-radius: 8px;
+  background: #eee;
+  color: var(--black);
+  font-size: 24px;
+  margin-right: 9px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#icons i:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+#menu-btn{
+  display: none;
+}
+
+/*Search-form*/
+
+.search-form{
+  position: absolute;
+  top: 110%; right: -110%;
+  width: 600px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+ .search-form.active{
+  right: 20px;
+  transition: .4s linear;
+}
+
+.search-form input{
+  height: 100%;
+  width: 100%;
+  background-color: none;
+  text-transform: none;
+  font-size: 16px;
+  color: var(--black);
+  padding: 0 1.5rem;
+}
+
+.search-form label{
+  font-size: 24px;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.search-form label:hover{
   color: var(--green);
 }
+
+/*Login-form*/
+
+.login-form{
+  position: absolute;
+  top: 110%; right: -110%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.login-form.active{
+  right: 20px;
+  transition: .4s linear;
+}
+
+.login-form h3{
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.login-form .btn{
+  width: 60%;
+  text-align: center;
+  background:#eee;
+  font-size: 16px;
+  color:var(--black);
+  text-transform: none;
+}
+
+.btn:hover{
+  background: var(--green);
+  color: #fff;
+}
+
+
+/*Media-Queries*/
+
+@media only screen and (max-width: 1450px) {
+  #navbar{
+    padding:  20px 2%;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  #menu-btn{
+    display: inline-block;
+  }
+  
+  #menu{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 280px;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+  }
+
+  #menu.active{
+    right: 20px;
+    transition: .4s linear;
+  }
+
+  #menu a{
+    font-size: 16px;
+    margin: 16px 10px;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
 
 /* Terceira Section 
 #icones {

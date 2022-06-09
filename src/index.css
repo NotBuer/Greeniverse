@@ -25,7 +25,21 @@ body{
   background-color: #eee;
 }
 
-section{
-  padding: 2rem 9%;
+.btn{
+  margin-top: 16px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  background: none;
 }
+
+.btn:hover{
+  background: var(--green);
+  color: #fff;
+}
+
 

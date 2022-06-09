@@ -25,13 +25,9 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/home" element={<Home />} />
-<<<<<<< HEAD
                     <Route path='/cart' element={<ShoppingCart />} />
-=======
                     <Route path='/registeruser' element={<RegisterUser />} />
                     <Route path='/aboutus' element={<AboutUs />} />
-                    
->>>>>>> e6f1d6e48c17a16ff9efcbc5131faa2f0bf78f13
                 </Routes>
 
             </Router>

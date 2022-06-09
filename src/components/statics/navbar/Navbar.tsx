@@ -1,53 +1,57 @@
-import React from 'react';
+import { Console } from 'console';
+import React, { useState } from 'react';
 import './Navbar.css'
-import lupa from '../../../assets/navbar/lupa-icon.png'
-import logo from '../../../assets/navbar/logo.png'
-import profile from '../../../assets/navbar/profile.png'
-import bag from '../../../assets/navbar/shopping-bag.png'
-
-
-
 
 function Navbar() {
-    return (
-      
-      <nav>
+  const [menuActive, setMenuActive]=useState(false)
+  function showMenu(){
+    setMenuActive(true)
 
-        <div className="top-promo-banner">
-            <span>Frete grátis nas compras acima de R$200,00</span>
-        </div>
+    if(menuActive===false){
+      setMenuActive(true)
+    }
+    else{
+      setMenuActive(false)
+    }
 
-        <header className="top-nav-bar">
+  }
+  return (
 
-          <img className="logo" src={logo} alt="logo"/>
+      <nav id='navbar'>
 
-          <form className="search-box">
-            <img className="lupa-icon" src={lupa} alt="lupa"/>
-            <input type="text" placeholder="O que voce está procurando?"/>
-            <button type="submit">Buscar</button>
-          </form>
+        <section id="logo-section">
+          <a href="#" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
+        </section>
 
-          <a href="/">Minha conta
-            <img className="nav-icon-1" src={profile} alt="user"/>
-          </a>
+        <section className={`${menuActive === true ? 'active' : ''}`}id='menu'>
+          <a href="#home">Home</a>
+          <a href="#features">Benefícios</a>
+          <a href="#products">Produtos</a>
+          <a href="/">Seja um fornecedor</a>
+          <a href="/">Indique um amigo</a>
+          <a href="./">Sobre nós</a>
+        </section>
 
-          <a href="/"> Minha sacola
-            <img className="nav-icon-2" src={bag} alt="cart"/>
-          </a>
+        <section id='icons'>
+          <i className="fas fa-bars" id="menu-btn" onClick={showMenu}></i>
+          <i className="fas fa-search" id="search-btn"></i>
+          <i className="fas fa-shopping-cart" id="cart-btn"></i>
+          <i className="fas fa-user" id="login-btn"></i>
+        </section>
 
-        </header>
+        <form className='search-form'>
+          <input type="search" id='search-box' placeholder='buscar produtos...'/>
+          <label htmlFor="searc-box" className='fas fa-search'></label>
+        </form>
 
-      <div className="botton-menu-bar">
-        <ul className="botton-list">
-          <li><a href="/">Ofertas</a></li>
-          <li><a href="/">Hortifruti</a></li>
-          <li><a href="/">Mercearia</a></li>
-          <li><a href="/">Laticínios</a></li>
-          <li><a href="/">Ovos e Carnes</a></li>
-        </ul>
-      </div>
+        <form className="login-form">
+          <h3>Fazer login</h3>
+          <button type="submit" value="Logar" className="btn"> Logar</button>
+          <button type="submit" value="Cadastrar" className="btn"> Cadastrar</button>
+        </form>
 
-    </nav>
+      </nav>
+
   )
 }
 

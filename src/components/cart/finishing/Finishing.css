@@ -1,0 +1,35 @@
+#container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#cep, #labelCoupon{
+    background-color: #fff;
+    text-align: center;
+    height: 45px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+#linkCep{
+    font-size: 20px;
+    color: rgb(19, 139, 55);
+}
+#linkCep:hover{
+    color: grey;
+}
+
+#coupon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#finishing{
+    width: 400px;
+    background-color: blueviolet;
+}

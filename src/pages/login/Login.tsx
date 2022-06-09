@@ -35,10 +35,10 @@ function Login() {
 
         try {
             await login(`/api/Authentication`, user, setToken);
-            alert("Login was successful");
+            alert("Login realizado com sucesso!");
         } catch (error) {
             console.log(error);
-            alert("Wrong username or password, try again!");
+            alert("Email ou senha incorretos, verifique e tente novamente!");
         }
     }
 

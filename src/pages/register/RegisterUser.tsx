@@ -4,6 +4,9 @@ import { registerUser } from "../../services/Services";
 import User from "../../models/User";
 import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } from '@material-ui/core';
 import { Box } from "@mui/material";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GoogleIcon from '@mui/icons-material/Google';
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './RegisterUser.css';
 
@@ -15,118 +18,137 @@ function RegisterUser() {
 
     const [user, setUser] = useState<User>(
         {
-          id: 0,
-          name: "",
-          email: "",
-          password: ""
+            id: 0,
+            name: '',
+            email: '',
+            password: '',
+            address: '',
+            telephone: '',
+            userType: 'IndividualPerson'
         }
     );
 
-    const [userResult , setUserResult] = useState<User>(
+    const [userResult, setUserResult] = useState<User>(
         {
             id: 1,
-            name: "",
-            email: "",
-            password: ""
-
+            name: '',
+            email: '',
+            password: '',
+            address: '',
+            telephone: '',
+            userType: ''
         }
     );
 
     useEffect(() => {
-
-        if(userResult .id === 0){
+        if (userResult.id != 1) {
             navigate('/login');
         }
+    }, [userResult, navigate]);
 
-    }, [userResult , navigate]);
 
-    function ConfirmPasswordHandle(e: ChangeEvent<HTMLInputElement>){
+    function ConfirmPasswordHandle(e: ChangeEvent<HTMLInputElement>) {
         setConfirmPassword(e.target.value)
     }
 
-    function updatedModel(e: ChangeEvent<HTMLInputElement>){
-
+    function updatedModel(e: ChangeEvent<HTMLInputElement>) {
         setUser({
             ...user,
             [e.target.name]: e.target.value
         })
     }
 
-    async function onSubmit(e: ChangeEvent<HTMLFormElement>){
-
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
-        
-        if(confirmPassword === user.password){
+
+        if (confirmPassword === user.password) {
             try {
-                await registerUser(`/api/User`, user, setUserResult)
-                alert('Usuario cadastrado com sucesso')
+                await registerUser(`/api/User/register`, user, setUserResult)
+                alert('Usuario cadastrado com sucesso!')
             } catch (error) {
                 alert('Usuario já cadastrado, tente outro email!')
+                console.log(error)
             }
 
-        }else{
+        } else {
             alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
         }
     }
 
-    return(
-    <>
-        <main>
-            <section>
-                <article id='img2'>
-                    <img src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
-                </article>
-                <article id='form_register'>
-                    <a id='Iconback' href="/login" target="black" rel="noopener noreferrer">
-                        <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
-                    </a>
+    return (
+        <>
+            <main>
+                <section>
+                    <article id='img2'>
+                        <img src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
+                    </article>
+                    <article id='form_register'>
+                        <a id='Iconback' href="/login" target="black" rel="noopener noreferrer">
+                            <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
+                        </a>
 
-                    <Typography variant='h3' gutterBottom component='h3' className='text3'> Cadastrar </Typography>
+                        <Typography variant='h3' component='h3' className='text3'> Cadastrar </Typography>
 
-                    <form onSubmit={onSubmit} id='form_register'>
+                        <form onSubmit={onSubmit} id='form_register'>
 
-                        <TextField value={user.name}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='name' label='Nome' variant='outlined' name='name' margin='normal' size='small' />
+                            <TextField value={user.name}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                id='name' label='Nome' variant='outlined' name='name' margin='normal' size='small' />
 
-                        <TextField
-                            value={user.email}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='email' label='E-mail' variant='outlined' name='email' margin='normal' type='email' size='small' />
+                            <TextField
+                                value={user.email}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                id='email' label='E-mail' variant='outlined' name='email' margin='normal' type='email' size='small' />
 
-                        <TextField
-                            value={user.password}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
+                            <TextField
+                                value={user.password}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
 
 
-                        <TextField
-                            value={confirmPassword}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => ConfirmPasswordHandle(e)}
-                            id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='Confirmpassword' margin='normal' type='password' size='small' />
+                            <TextField
+                                value={confirmPassword}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => ConfirmPasswordHandle(e)}
+                                id='ConfirmPassword' label='ConfirmarSenha' variant='outlined' name='ConfirmPassword' margin='normal' type='password' size='small' />
 
-                            
-                            <Box marginY={2} textAlign='center' className='button1'>
-                            <Link to='/login' className='text-decorator-none'>
-                                <Button variant='outlined' className='buttonRegister'>
-                                    Cancelar
+
+
+                            <Box marginY={2} textAlign='center' className='buttons'>
+                                <Link to='/login' className='text-decorator-none'>
+                                    <Button variant='outlined' className='buttonRegister'>
+                                        Cancelar
+                                    </Button>
+                                </Link>
+
+                                <Button type='submit' variant='contained' className='buttonRegister'>
+                                    Cadastrar
                                 </Button>
-                            </Link>
-                        
-                            <Button type='submit' variant='contained' className='buttonRegister'>
-                                Cadastrar
-                            </Button>
-                        </Box>
-                       
+                            </Box>
 
-                    </form>
+                            <Box className='Icons' display='flex' justifyContent='center' marginTop={3}>
 
-                </article>
+                                <a href="" target="black" rel="noopener noreferrer">
+                                    <GoogleIcon style={{ fontSize: 40, color: "red" }} />
+                                </a>
 
-            </section>
-        </main>
-    </>
-        );
+
+                                <a href="" target="black" rel="noopener noreferrer">
+                                    <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
+                                </a>
+
+                                <a href="" target="black" rel="noopener noreferrer">
+                                    <TwitterIcon style={{ fontSize: 40, color: "blue" }} />
+                                </a>
+                            </Box>
+
+                        </form>
+
+                    </article>
+
+                </section>
+            </main>
+        </>
+    );
 }
 
 export default RegisterUser;

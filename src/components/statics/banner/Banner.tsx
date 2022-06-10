@@ -4,7 +4,7 @@ import './Banner.css'
 function Banner() {
   return (
 
-    <section className="home" id="home">
+    <section id="home">
 
       <div className="content">
         <h3>Compre e <span>ajude uma ONG</span></h3>

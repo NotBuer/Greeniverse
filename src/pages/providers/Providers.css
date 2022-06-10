@@ -1,0 +1,21 @@
+.buttonProviders {
+
+  width: 100px;
+  color: black;
+  display: flex;
+  padding-left: 100px;
+
+}
+
+.text3{
+  color: #5b8866;
+  font-size: 35px;
+}
+.button1 {
+  display: flex;
+  justify-content:space-around;
+
+}
+.test4 {
+  color: 	#000000;
+}

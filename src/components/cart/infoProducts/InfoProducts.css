@@ -29,7 +29,7 @@
   }
 
   #cartProducts{
-      padding: 50px 300px;
+      padding: 50px 200px;
   }
 
 .container{
@@ -63,7 +63,7 @@
 
 #linkProducts{
     font-size: 20px;
-    color: rgb(19, 139, 55);
+    color: var(--green);
 }
 
 #linkProducts:hover{

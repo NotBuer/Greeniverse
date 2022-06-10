@@ -7,8 +7,8 @@ function Finishing() {
 
                 <article id='delivery'>
                     <h2>Entrega</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form>
+                    <p>Calcule aqui seu valor de entrega , insira seu CEP abaixo para simular o valor.</p>
+                    <form id='formCep'>
                         <input type="address" id='cep' placeholder='00000-000' />
                         <button type="submit" value="Calcular" className="btn">Calcular</button>
                     </form>
@@ -18,15 +18,19 @@ function Finishing() {
                 </article>
                 <article id='finishing'>
                     <div id='coupon'>
-                        <label htmlFor="cupom">Cupom</label>
+                        <label htmlFor="cupom" id='textCoupon'>Cupom</label>
                         <input type="text" id="labelCoupon" placeholder='CupomGreeniverse' />
                         <button type="submit" value="Aplicar" className="btn">Aplicar</button>
                     </div>
-                    <p>Produtos</p>
-                    <p>Descontos</p>
-                    <p>Entrega</p>
-                    <p>Total</p>
+                    <ul id='listFin'>
+                    <li>Produtos</li>
+                    <li>Descontos</li>
+                    <li>Entrega</li>
+                    <li>Total</li>
+                    </ul>
+                    <div className="divBtn">
                     <button type="submit" value="Finishing" className="btn">Finalizar Pedido</button>
+                    </div>
                 </article>
 
             </main>

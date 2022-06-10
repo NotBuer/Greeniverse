@@ -1,7 +1,7 @@
 import TextAboutUs from '../../components/textAboutUs/TextAboutUs'
 import React from 'react'
 import './AboutUs.css';
-import Carrusel from '../../components/carrusel/Carrusel';
+import Carrusel from '../../components/carousel/Carrusel';
 
 function AboutUs() {
     return (

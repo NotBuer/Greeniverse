@@ -1,7 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link, useNavigate, } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Services';
 import User from '../../models/User';
 import AuthenticationDTO from '../../models/AuthenticationDTO';
@@ -10,11 +9,20 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './Login.css';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
 
 function Login() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+
+    const [token, setToken] = useState('');
+
+    /* Local storage no longer supported, now we are using redux. So
+       replace everywhere in the project that still using the local
+       storage with redux */
+    // const [token, setToken] = useLocalStorage('token');
 
     const [user, setUser] = useState<AuthenticationDTO>(
         {
@@ -44,6 +52,7 @@ function Login() {
 
     useEffect(() => {
         if (token !== '') {
+            dispatch(addToken(token));
             navigate('/home');
         }
     }, [token, navigate]);

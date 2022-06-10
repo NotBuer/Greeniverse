@@ -1,4 +1,4 @@
-.home{
+.banner{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,21 +9,21 @@
   padding-bottom: 60px;
 }
 
-.home .content{
+.banner .content{
   text-align: center;
   width: 40rem;
 }
 
-.home .content h3{
+.banner .content h3{
   color: var(--black);
   font-size: 32px;
 }
 
-.home .content h3 span{
+.banner .content h3 span{
   color: var(--green);
 }
 
-.home .content p{
+.banner .content p{
   color: var(--light-color);
   font-size: 16px;
   padding: 1rem 0;

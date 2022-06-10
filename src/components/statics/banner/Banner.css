@@ -1,4 +1,8 @@
-.home{
+<<<<<<< HEAD
+.banner{
+=======
+#home{
+>>>>>>> c328b2703c36811d79f5968dfb47022484473300
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,21 +13,37 @@
   padding-bottom: 60px;
 }
 
-.home .content{
+<<<<<<< HEAD
+.banner .content{
+=======
+#home .content{
+>>>>>>> c328b2703c36811d79f5968dfb47022484473300
   text-align: center;
   width: 40rem;
 }
 
-.home .content h3{
+<<<<<<< HEAD
+.banner .content h3{
+=======
+#home .content h3{
+>>>>>>> c328b2703c36811d79f5968dfb47022484473300
   color: var(--black);
   font-size: 32px;
 }
 
-.home .content h3 span{
+<<<<<<< HEAD
+.banner .content h3 span{
   color: var(--green);
 }
 
-.home .content p{
+.banner .content p{
+=======
+#home .content h3 span{
+  color: var(--green);
+}
+
+#home .content p{
+>>>>>>> c328b2703c36811d79f5968dfb47022484473300
   color: var(--light-color);
   font-size: 16px;
   padding: 1rem 0;

@@ -37,10 +37,19 @@ body{
   background: none;
 }
 
+
 .btn:hover{
   background: var(--green);
   color: #fff;
 }
+
+ul{
+	list-style: none;
+}
+
+
+
+
 
 
 

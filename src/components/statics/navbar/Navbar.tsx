@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 
 function Navbar() {
+
+ 
   const [menuActive, setMenuActive] = useState(false)
   function showMenu() {
     setMenuActive(true)
@@ -21,16 +23,16 @@ function Navbar() {
     <nav id='navbar'>
 
       <section id="logo-section">
-        <a href="#" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
+        <a href="/home#banner" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
       </section>
 
       <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
-        <a href="#home">Home</a>
+        <Link to="/home">Home</Link>
         <a href="#features">Benefícios</a>
         <a href="#products">Produtos</a>
-        <a href="/">Seja um fornecedor</a>
-        <a href="/">Indique um amigo</a>
-        <a href="./">Sobre nós</a>
+        <Link to="/">Seja um fornecedor</Link>
+        <Link to="/">Indique um amigo</Link>
+        <Link to="/aboutus">Sobre nós</Link>
       </section>
 
       <section id='icons'>

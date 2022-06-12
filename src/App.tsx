@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/statics/navbar/Navbar';
-import AboutUs from './pages/aboutus/AboutUs';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import ShoppingCart from './pages/shoppingCart/ShoppingCart';
 import RegisterUser from './pages/register/RegisterUser';
 import './App.css';
 import store from './store/store';
+import AboutUs from './pages/aboutUs/AboutUs';
     
 
 function App() {

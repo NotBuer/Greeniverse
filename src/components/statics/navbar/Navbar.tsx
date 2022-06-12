@@ -5,7 +5,7 @@ import './Navbar.css'
 
 function Navbar() {
 
- 
+
   const [menuActive, setMenuActive] = useState(false)
   function showMenu() {
     setMenuActive(true)
@@ -48,8 +48,8 @@ function Navbar() {
       </form>
 
       <form className="login-form">
-        <button type="submit" value="Logar" className="btn"> Logar</button>
-        <button type="submit" value="Cadastrar" className="btn"> Cadastrar</button>
+        <a href="/login" className="btn">Logar</a>
+        <a href="/registeruser" className="btn">Cadastrar</a>
       </form>
 
     </nav>

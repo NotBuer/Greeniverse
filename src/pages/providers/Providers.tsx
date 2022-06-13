@@ -1,11 +1,13 @@
 import { Button,Grid,Typography,TextField } from "@material-ui/core";
 import { Link } from 'react-router-dom';
+import Navbar from '../../components/statics/navbar/Navbar';
 import { Box } from "@mui/material";
 
 
 function providers(){
   return(
     <>
+    <Navbar />
     <Grid direction='column' justifyContent='flex-start' alignItems='center'></Grid>
      <Box>
      <form >

@@ -30,11 +30,10 @@ function App() {
                     <Route path='/cart' element={<ShoppingCart />} />
                     <Route path='/registeruser' element={<RegisterUser />} />
                     <Route path='/aboutus' element={<AboutUs />} />
-<<<<<<< HEAD
                     <Route path='/payment' element={<Payment />} />
-=======
-                    <Route path='/products' element={<Product />} />
->>>>>>> 4e21bd73cdb197e11fed09c11ce73c9673145fa4
+                    <Route path='/product' element={<Product />} />
+                    
+
                 </Routes>
 
             </Router>

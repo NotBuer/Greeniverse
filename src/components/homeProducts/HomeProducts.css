@@ -1,0 +1,14 @@
+.product-title{
+    text-align: center;
+    padding: 46px 0;
+    padding-bottom: 30px;
+    font-size: 36px;
+    color: var(--black);
+  }
+  
+.product-title span{
+    color: var(--green);
+    display: inline-block;
+    padding: 8px 16px;
+  
+  } 

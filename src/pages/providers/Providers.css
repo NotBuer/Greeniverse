@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 *{
@@ -12,15 +11,10 @@
   transition: all .2s linear;
 }
 .buttonProviders {
-=======
-.buttonProviders {
-
->>>>>>> fd9093dfe26f0d6a829280ebae383d921b64a5c2
   width: 100px;
   color: black;
   display: flex;
   padding-left: 100px;
-<<<<<<< HEAD
   text-Align: center;
 }
 .text{
@@ -32,27 +26,15 @@
   color: #5b8866;
   font-size: 35px;
   text-align: center;
-=======
-
-}
-
-.text3{
-  color: #5b8866;
-  font-size: 35px;
->>>>>>> fd9093dfe26f0d6a829280ebae383d921b64a5c2
 }
 .button1 {
   display: flex;
   justify-content:space-around;
-<<<<<<< HEAD
   color: #5b8866;
-=======
->>>>>>> fd9093dfe26f0d6a829280ebae383d921b64a5c2
 
 }
 .test4 {
   color: 	#000000;
-<<<<<<< HEAD
   justify-content: center;
   width: 100px;
   display: flex;
@@ -62,6 +44,3 @@
   color: #000000;
   text-align: center;
 }
-=======
-}
->>>>>>> fd9093dfe26f0d6a829280ebae383d921b64a5c2

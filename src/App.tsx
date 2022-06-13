@@ -10,6 +10,7 @@ import './App.css';
 import store from './store/store';
 import AboutUs from './pages/aboutUs/AboutUs';
 import Product from './components/statics/product/Product';
+import Providers from './pages/providers/Providers';
     
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                     <Route path='/registeruser' element={<RegisterUser />} />
                     <Route path='/aboutus' element={<AboutUs />} />
                     <Route path='/products' element={<Product />} />
+                    <Route path='/providers' element={<Providers />} />
                 </Routes>
 
             </Router>

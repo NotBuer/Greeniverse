@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Box } from "@mui/material";
 
 
-function providers(){
+function Providers(){
   return(
     <>
     <Grid direction='column' justifyContent='flex-start' alignItems='center'></Grid>
@@ -33,4 +33,4 @@ function providers(){
     </>
   );
 }
-export default providers;
+export default Providers;

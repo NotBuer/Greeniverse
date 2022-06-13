@@ -9,6 +9,7 @@ import RegisterUser from './pages/register/RegisterUser';
 import './App.css';
 import store from './store/store';
 import AboutUs from './pages/aboutUs/AboutUs';
+import Product from './components/statics/product/Product';
     
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                     <Route path='/cart' element={<ShoppingCart />} />
                     <Route path='/registeruser' element={<RegisterUser />} />
                     <Route path='/aboutus' element={<AboutUs />} />
+                    <Route path='/products' element={<Product />} />
                 </Routes>
 
             </Router>

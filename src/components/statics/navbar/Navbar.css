@@ -148,6 +148,10 @@
   text-transform: none;
 }
 
+.btn{
+  margin: 10px !important;
+}
+
 .btn:hover{
   background: var(--green);
   color: #fff;

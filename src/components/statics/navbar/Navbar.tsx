@@ -53,6 +53,7 @@ function Navbar() {
             </form>
 
             <form className="login-form">
+                <h2> Fazer Login</h2>
                 <a href="/login" className="btn">Logar</a>
                 <a href="/registeruser" className="btn">Cadastrar</a>
             </form>

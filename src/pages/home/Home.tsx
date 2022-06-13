@@ -3,12 +3,12 @@ import './Home.css';
 import Navbar from '../../components/statics/navbar/Navbar';
 import Banner from '../../components/statics/banner/Banner';
 import Features from '../../components/statics/features/Features';
-import Product from '../../components/statics/product/Product';
 import Footer from '../../components/statics/footer/Footer';
-
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokenReducer';
+import CardProducts from '../../components/cardProducts/CardProducts';
+import HomeProducts from '../../components/homeProducts/HomeProducts';
 
 function Home(){
 
@@ -37,7 +37,7 @@ function Home(){
         <Navbar />
         <Banner />
         <Features />
-        <Product />
+        <HomeProducts />
         <Footer />
 
 

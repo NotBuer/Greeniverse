@@ -57,55 +57,57 @@ function Login() {
         }
     }, [token, navigate]);
 
-    
 
-    return (
-        <>
-            <main id='mnId'>
-                <section>
-                    <article id='form_login'>
-                        <a id='Iconback' href="http://localhost:3000/home" target="black" rel="noopener noreferrer">
-                            <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
+return (
+    <>
+        <main id='mnId'>
+            <section>
+                <article id='form_login'>
+                    <a id='Iconback' href="http://localhost:3000/home" target="black" rel="noopener noreferrer">
+                        <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
+                    </a>
+
+                    <Typography variant='h3' gutterBottom component='h3' className='text2'> Entrar </Typography>
+
+                    <form onSubmit={onSubmit} id='form_login'>
+                        <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
+                        <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
+                        <input type="password" id="field-password" className="field-password" placeholder="*******"></input>
+                        {/* <i className="fa-solid fa-eye" id="eye" onClick={showPassword}></i>
+                        <i className="fa-solid fa-eye-slash" id="eye-slash" onClick={showPassword}></i> */}
+                        <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
+                    </form>
+
+                    <Box borderBottom={1}>
+                        <Link to='/registeruser'>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='texts1'> Não tem uma conta ainda? Cadastre-se </Typography>
+                        </Link>
+
+                        <p className='ForgotThePass'>Ou</p>
+                    </Box>
+
+                    <Box className='Icons' display='flex' justifyContent='center' marginTop={3}>
+
+                        <a href="" target="black" rel="noopener noreferrer">
+                            <GoogleIcon style={{ fontSize: 40, color: "red" }} />
                         </a>
 
-                        <Typography variant='h3' gutterBottom component='h3' className='text2'> Entrar </Typography>
+                        <a href="" target="black" rel="noopener noreferrer">
+                            <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
+                        </a>
 
-                        <form onSubmit={onSubmit} id='form_login'>
-                            <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
-                            <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
-                            <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
-                        </form>
+                        <a href="" target="black" rel="noopener noreferrer">
+                            <TwitterIcon style={{ fontSize: 40, color: "blue" }} />
+                        </a>
+                    </Box>
 
-                        <Box borderBottom={1}>
-                            <Link to='/registeruser'>
-                                <Typography variant='subtitle1' gutterBottom align='center' className='texts1'> Não tem uma conta ainda? Cadastre-se </Typography>
-                            </Link>
-
-                            <p className='ForgotThePass'>Ou</p>
-                        </Box>
-
-                        <Box className='Icons' display='flex' justifyContent='center' marginTop={3}>
-
-                            <a href="" target="black" rel="noopener noreferrer">
-                                <GoogleIcon style={{ fontSize: 40, color: "red" }} />
-                            </a>
-
-                            <a href="" target="black" rel="noopener noreferrer">
-                                <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
-                            </a>
-
-                            <a href="" target="black" rel="noopener noreferrer">
-                                <TwitterIcon style={{ fontSize: 40, color: "blue" }} />
-                            </a>
-                        </Box>
-
-                    </article>
-                    <article id='img'>
-                        <img src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
-                    </article>
-                </section>
-            </main>
-        </>
+                </article>
+                <article id='img'>
+                    <img src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
+                </article>
+            </section>
+        </main>
+    </>
     );
 }
 

@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import ShoppingCart from './pages/shoppingCart/ShoppingCart';
 import RegisterUser from './pages/register/RegisterUser';
+import Payment from './pages/payment/Payment';
 import './App.css';
 import store from './store/store';
 import Providers from './pages/providers/Providers'
@@ -30,7 +31,10 @@ function App() {
                     <Route path='/registeruser' element={<RegisterUser />} />
                     <Route path='/providers' element={<Providers />} />
                     <Route path='/aboutus' element={<AboutUs />} />
-                    <Route path='/products' element={<Product />} />
+                    <Route path='/payment' element={<Payment />} />
+                    <Route path='/product' element={<Product />} />
+                    
+
                 </Routes>
             </Router>
         </Provider>

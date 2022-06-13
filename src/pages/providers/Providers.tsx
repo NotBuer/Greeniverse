@@ -8,14 +8,6 @@ import { ChangeEvent } from "react";
 function Providers() {
   return (
     <>
-<<<<<<< HEAD
-    <Navbar />
-    <Grid direction='column' justifyContent='flex-start' alignItems='center'></Grid>
-     <Box>
-     <form >
-     
-        <Typography variant='h4' gutterBottom component='h4' align='center' className='text3'> Enviar uma solicitação </Typography>
-=======
       <Grid direction='column' justifyContent='flex-start' alignItems='flex-end'>
         <Grid item xs={4} alignItems='center'>
           <Typography variant='h5' gutterBottom component='h5' className='text'> Greeniverse </Typography>
@@ -27,7 +19,6 @@ function Providers() {
               <TextField id='none' label='CNPJ' variant='filled' name='CNPJ' margin='normal' fullWidth />
               <TextField id='none' label='Assunto' variant='filled' name='about' margin='normal' fullWidth />
               <TextField id='none' label='Descrição' variant='filled' name='descrption' margin='normal' fullWidth />
->>>>>>> db12b4bcf0c8074097015ad2f13b0900019be243
 
               <Typography variant='h6' gutterBottom component='h6' align='center' className='text4'> Insira os detalhes de sua solicitação. Um membro de nossa equipe responderá assim que for possível. </Typography>
 

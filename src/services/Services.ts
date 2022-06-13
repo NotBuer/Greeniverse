@@ -14,3 +14,13 @@ export const registerUser = async(url: any, info: any, setDado: any) => {
     const answer = await api.post(url, info)
     setDado(answer.data)
 }
+
+export const busca = async (url: any, setDado: any, header: any) => {
+    const answer = await api.get(url, header)
+    setDado(answer.data)
+}
+
+export const buscaId = async(url: any, setDado: any, header: any) => { 
+    const answer = await api.get(url, header)
+    setDado(answer.data)
+}

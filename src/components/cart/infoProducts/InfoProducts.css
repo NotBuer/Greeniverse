@@ -15,7 +15,7 @@
     font-size: 26px;
     font-weight: bolder;
     color: var(--green);
-    padding: 20px 300px;
+    padding: 20px 150px;
   }
 
   #logo-cart img {
@@ -29,7 +29,7 @@
   }
 
   #cartProducts{
-      padding: 50px 300px;
+      padding: 50px 150px;
   }
 
 .container{
@@ -63,7 +63,7 @@
 
 #linkProducts{
     font-size: 20px;
-    color: rgb(19, 139, 55);
+    color: var(--green);
 }
 
 #linkProducts:hover{

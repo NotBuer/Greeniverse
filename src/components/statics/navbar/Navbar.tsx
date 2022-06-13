@@ -48,8 +48,9 @@ function Navbar() {
       </form>
 
       <form className="login-form">
-        <button type="submit" value="Logar" className="btn"> Logar</button>
-        <button type="submit" value="Cadastrar" className="btn"> Cadastrar</button>
+        <h2>Fazer Login</h2>
+        <button className="btn"> <Link to="/login">Logar</Link></button>
+        <button className="btn"> Cadastrar</button>
       </form>
 
     </nav>

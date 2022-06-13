@@ -34,10 +34,9 @@ function Navbar() {
 
             <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
                 <Link to="/home">Home</Link>
-                <a href="#features">Benefícios</a>
-                <a href="#products">Produtos</a>
-                <Link to="/">Seja um fornecedor</Link>
-                <Link to="/">Indique um amigo</Link>
+                <a href="/home#features">Benefícios</a>
+                <a href="/allproducts">Produtos</a>
+                <Link to="/providers">Seja um fornecedor</Link>
                 <Link to="/aboutus">Sobre nós</Link>
             </section>
 

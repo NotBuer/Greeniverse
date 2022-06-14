@@ -10,7 +10,6 @@ function AboutUs() {
 
                 <Navbar />
                 <TextAboutUs />
-            
 
             </main>
 

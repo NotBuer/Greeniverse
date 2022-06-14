@@ -10,6 +10,7 @@
   text-decoration: none;
   transition: all .2s linear;
 }
+<<<<<<< HEAD
 :root{
   --green: #88A18E;
   --black:#130f40;
@@ -18,6 +19,17 @@
   --border:.2rem solid rgba(0,0,0,.1);
   --outline:.1rem solid rgba(0,0,0,.1);
   --outline-hover:.2rem solid var(--black);
+=======
+.gridBox{
+  margin: top 300px;;
+}
+.buttonProviders {
+  width: 100px;
+  color: black;
+  display: flex;
+  padding-left: 100px;
+  text-Align: center;
+>>>>>>> f874f6f39ea9ad68164f29957388c954f3bf2a44
 }
 .provider-title{
   background-color: rgb(32, 176, 32);

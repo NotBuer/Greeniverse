@@ -4,9 +4,6 @@ import { Link, useNavigate, } from 'react-router-dom';
 import { login } from '../../services/Services';
 import User from '../../models/User';
 import AuthenticationDTO from '../../models/AuthenticationDTO';
-import GoogleIcon from '@mui/icons-material/Google';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './Login.css';
 import { useDispatch } from 'react-redux';
@@ -75,27 +72,10 @@ return (
                         <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
                     </form>
 
-                    <Box borderBottom={1}>
+                    <Box>
                         <Link to='/registeruser'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='texts1'> Não tem uma conta ainda? Cadastre-se </Typography>
                         </Link>
-
-                        <p className='ForgotThePass'>Ou</p>
-                    </Box>
-
-                    <Box className='Icons' display='flex' justifyContent='center' marginTop={3}>
-
-                        <a href="" target="black" rel="noopener noreferrer">
-                            <GoogleIcon style={{ fontSize: 40, color: "red" }} />
-                        </a>
-
-                        <a href="" target="black" rel="noopener noreferrer">
-                            <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
-                        </a>
-
-                        <a href="" target="black" rel="noopener noreferrer">
-                            <TwitterIcon style={{ fontSize: 40, color: "blue" }} />
-                        </a>
                     </Box>
 
                 </article>

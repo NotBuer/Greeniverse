@@ -4,9 +4,6 @@ import { registerUser } from "../../services/Services";
 import User from "../../models/User";
 import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } from '@material-ui/core';
 import { Box } from "@mui/material";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GoogleIcon from '@mui/icons-material/Google';
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './RegisterUser.css';
 
@@ -123,22 +120,6 @@ function RegisterUser() {
                                 <Button type='submit' variant='contained' className='buttonRegister'>
                                     Cadastrar
                                 </Button>
-                            </Box>
-
-                            <Box className='Icons' display='flex' justifyContent='center' marginTop={3}>
-
-                                <a href="" target="black" rel="noopener noreferrer">
-                                    <GoogleIcon style={{ fontSize: 40, color: "red" }} />
-                                </a>
-
-
-                                <a href="" target="black" rel="noopener noreferrer">
-                                    <FacebookIcon style={{ fontSize: 40, color: "blue" }} />
-                                </a>
-
-                                <a href="" target="black" rel="noopener noreferrer">
-                                    <TwitterIcon style={{ fontSize: 40, color: "blue" }} />
-                                </a>
                             </Box>
 
                         </form>

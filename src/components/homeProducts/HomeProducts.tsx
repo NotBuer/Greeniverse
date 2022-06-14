@@ -101,7 +101,7 @@ function HomeProducts() {
                 </Box>
 
                 <Box className='box-mais'>
-                    <Link to='/produtos' className='link'>
+                    <Link to='/allproducts' className='link'>
                         <Button className='btn-mais'>
                             Veja mais
                         </Button>

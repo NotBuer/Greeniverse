@@ -40,7 +40,7 @@ export default function CardProducts() {
                                     title={product.productName} />
 
                                 <CardContent>
-                                <a href="#"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo"  style={{ fontSize: 30, color: "red" }} /></a>
+                                <img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" className='logoCard' />
                                     <Typography gutterBottom variant="h5" color="textPrimary" component="h4">
                                         {product.productName}
                                     </Typography>

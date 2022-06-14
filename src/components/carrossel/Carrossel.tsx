@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Carousel from "react-elastic-carousel";
 import "./carrossel.css";
 
 

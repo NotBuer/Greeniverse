@@ -10,7 +10,7 @@ import './App.css';
 import store from './store/store';
 import Providers from './pages/providers/Providers'
 import Product from './components/statics/product/Product';
-import AboutUs from './pages/aboutus/AboutUs';
+import AboutUs from './pages/aboutUs/AboutUs';
 
 
 
@@ -32,9 +32,7 @@ function App() {
                     <Route path='/providers' element={<Providers />} />
                     <Route path='/aboutus' element={<AboutUs />} />
                     <Route path='/payment' element={<Payment />} />
-                    <Route path='/product' element={<Product />} />
-                    
-
+                    <Route path='/allproducts' element={<Product />} />
                 </Routes>
             </Router>
         </Provider>

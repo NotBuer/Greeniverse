@@ -108,10 +108,7 @@ function HomeProducts() {
                     </Link>
                 </Box>
 
-
             </Container>
-
-            </section>
         </>
     );
 }

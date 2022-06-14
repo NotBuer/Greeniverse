@@ -72,9 +72,6 @@ return (
                     <form onSubmit={onSubmit} id='form_login'>
                         <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
                         <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
-                        <input type="password" id="field-password" className="field-password" placeholder="*******"></input>
-                        {/* <i className="fa-solid fa-eye" id="eye" onClick={showPassword}></i>
-                        <i className="fa-solid fa-eye-slash" id="eye-slash" onClick={showPassword}></i> */}
                         <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
                     </form>
 

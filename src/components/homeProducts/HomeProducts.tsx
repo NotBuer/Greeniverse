@@ -8,9 +8,8 @@ import { Link } from 'react-router-dom'
 function HomeProducts() {
     return (
         <>
-            <h2 className='product-title'> Nossos <span>Produtos</span> </h2>
-
             <Container>
+                <h2 className='tituloproduto'> Nossos Produtos </h2>
                 <Box className='cards'>
                     <Card className='rootHome'>
                         <CardActionArea>
@@ -56,7 +55,7 @@ function HomeProducts() {
                                     Limão
                                 </Typography>
                                 <Typography variant="body2" color="textPrimary" component="p">
-                                    Limão de qualidade
+                                   Limão de qualidade
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -112,6 +111,7 @@ function HomeProducts() {
 
             </Container>
 
+            </section>
         </>
     );
 }

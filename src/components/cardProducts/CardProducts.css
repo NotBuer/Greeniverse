@@ -9,10 +9,11 @@
 }
 
 .cardbtns {
-    padding: 0 20px 0 20px !important;
+    padding: 15px 20px 15px 20px !important;
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
+    align-items: center !important;
 }
 
 .root {
@@ -21,6 +22,7 @@
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75) !important;
     transition: transform 1s !important;
     animation: fade 1s;
+    
 }
 
 .root:hover{
@@ -29,12 +31,14 @@
 }
 
 .btnComprar {
-    background-color: #002878;
+    width: 125px;
+    margin-top: -10px;
+    background-color: var(--green);
     background-position: 100% 0;
     background-size: 200% 200%;
     color: white !important;
-    border-radius: 50px !important;
-    padding: 12px 48px;
+    border-radius: 15px !important;
+    padding: 12px 40px;
     font-size: 16px;
     font-weight: 200;
     text-decoration: none;
@@ -46,11 +50,12 @@
 .btnComprar:hover {
     box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
     background-position: 0 0 !important;
+    color: beige;
 }
 
 .imgCard {
     width: 50% !important;
     height: 50% !important;
-    padding-top: 10px !important;
+    padding-top: 15px !important;
     margin: auto !important;
 }

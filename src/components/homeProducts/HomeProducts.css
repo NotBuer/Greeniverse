@@ -1,0 +1,81 @@
+.product-title{
+    text-align: center;
+    padding: 46px 0;
+    padding-bottom: 30px;
+    font-size: 36px;
+    color: var(--black);
+}
+  
+.product-title span{
+    color: var(--green);
+    display: inline-block;
+    padding: 8px 16px;
+} 
+
+.products-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-products{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: red;
+  padding: 0;
+  max-width: none;
+}
+
+.cards{
+  background-color: green;
+  width: 240px;
+  padding: 10px;
+  text-align: center;
+  outline-offset: -8px;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: .2s linear;
+}
+
+.imgCardHome{
+  width:min-content!important;
+  object-fit: none!important;
+}
+
+.rootHome{
+  background-color: pink!important;
+  padding: 10px!important;
+}
+
+.rootHome .card-title{
+  font-size: 24px!important;
+  color: var(--black)!important;
+}
+
+.cardbtns{
+display: flex!important;
+ justify-content: center!important;
+ align-items: center!important;
+ padding: 0px!important;
+ margin-left: 23%!important;
+ margin-bottom: 10px!important;
+}
+
+.btn{
+  display: inline-block!important;
+  padding: 10px 20px!important;
+  font-size: 16px!important;
+  border-radius: 8px!important;
+  border: 2px solid var(--black)!important;
+  color:var(--black)!important;
+  cursor: pointer!important;
+  background: none!important;
+}
+
+.btn:hover{
+  background: var(--green)!important;
+  color: #fff!important;
+}

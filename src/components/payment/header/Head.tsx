@@ -9,20 +9,20 @@ import BasicModal from '../modal/Modal';
 
 
 function Head() {
-    return(
+    return (
         <>
-        <main id='paymentHead'>
-        <article id="logo-payment">
-                <a href="#"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /></a>
+            <main id='paymentHead'>
+                <article id="logo-payment">
+                    <a href="#"><img className="payment-img" src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /></a>
                     <h3>Greeniverse</h3>
                     <div className='modal'><BasicModal /></div>
-                    
+
                 </article>
                 <article id='cartProducts'>
                     <h1 id='FinalizedTitle'>Finalizar compra</h1>
-                         </article>
+                </article>
 
-        </main>
+            </main>
 
         </>
     )

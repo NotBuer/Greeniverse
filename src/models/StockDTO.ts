@@ -4,6 +4,7 @@ interface Stock {
     description?: string,
     price?: number,
     productName?: string,
+    productAmount?: number,
     provider?: string,
     productPhoto?: string
 

@@ -111,7 +111,7 @@ function HomeProducts() {
 
             </Container>
 
-            </section>
+            
         </>
     );
 }

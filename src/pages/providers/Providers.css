@@ -19,17 +19,6 @@
   --outline:.1rem solid rgba(0,0,0,.1);
   --outline-hover:.2rem solid var(--black);
 }
-.gridBox{
-  margin: top 300px;;
-}
-.buttonProviders {
-  width: 100px;
-  color: black;
-  display: flex;
-  padding-left: 100px;
-  text-Align: center;
-
-}
 .provider-title{
   background-color: rgb(32, 176, 32);
 

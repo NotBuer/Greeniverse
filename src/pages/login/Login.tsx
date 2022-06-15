@@ -50,7 +50,7 @@ function Login() {
     useEffect(() => {
         if (token !== '') {
             dispatch(addToken(token));
-            navigate('/home');
+            navigate('/Home');
         }
     }, [token, navigate]);
 
@@ -60,7 +60,7 @@ return (
         <main id='mnId'>
             <section>
                 <article id='form_login'>
-                    <a id='Iconback' href="http://localhost:3000/home" target="black" rel="noopener noreferrer">
+                    <a id='Iconback' href="http://localhost:3000/Home" target="black" rel="noopener noreferrer">
                         <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
                     </a>
 

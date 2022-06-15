@@ -1,81 +1,64 @@
-.product-title{
-    text-align: center;
-    padding: 46px 0;
-    padding-bottom: 30px;
-    font-size: 36px;
-    color: var(--black);
-}
-  
-.product-title span{
-    color: var(--green);
-    display: inline-block;
-    padding: 8px 16px;
-} 
-
-.products-section{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-products{
-  display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  background-color: red;
-  padding: 0;
-  max-width: none;
-}
-
-.cards{
-  background-color: green;
-  width: 240px;
-  padding: 10px;
+.heading{
   text-align: center;
-  outline-offset: -8px;
+  padding: 32px 0;
+  padding-bottom: 32px;
+  font-size: 36px;
+  color: var(--black);
+}
+
+.heading span{
+  color: var(--green);
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.product-boxes{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8%;
+}
+
+.product-card{
+  background: #fff;
+  border-radius: 1px;
+  text-align: center;
+  width: 380px;
+  padding: 48px;
+  outline-offset: -1rem;
   outline: var(--outline);
   box-shadow: var(--box-shadow);
   transition: .2s linear;
 }
 
-.imgCardHome{
-  width:min-content!important;
-  object-fit: none!important;
+.product-card:hover{
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
 }
 
-.rootHome{
-  background-color: pink!important;
-  padding: 10px!important;
-}
-
-.rootHome .card-title{
-  font-size: 24px!important;
-  color: var(--black)!important;
-}
-
-.cardbtns{
-display: flex!important;
- justify-content: center!important;
- align-items: center!important;
- padding: 0px!important;
- margin-left: 23%!important;
- margin-bottom: 10px!important;
+.product-card h3{
+  font-size: 24px;
+  color: var(--black);
 }
 
 .btn{
-  display: inline-block!important;
-  padding: 10px 20px!important;
-  font-size: 16px!important;
-  border-radius: 8px!important;
-  border: 2px solid var(--black)!important;
-  color:var(--black)!important;
-  cursor: pointer!important;
-  background: none!important;
+  margin-top: 16px !important;
 }
 
-.btn:hover{
-  background: var(--green)!important;
-  color: #fff!important;
+.product-card .stars i{
+  font-size: 16px;
+  color: var(--green);
+  padding: .5rem 0;
+}
+
+.more-product{
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  padding: 0px 8%;
+  margin-top: 20px;
+}
+
+.more-product:hover{
+  color: var(--green);
+  font-size: 22px;
 }

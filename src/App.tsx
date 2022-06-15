@@ -10,7 +10,7 @@ import './App.css';
 import store from './store/store';
 import Providers from './pages/providers/Providers'
 import Product from './components/statics/product/Product';
-import AboutUs from './pages/aboutUs/AboutUs';
+import AboutUs from './pages/aboutus/AboutUs';
 
 
 

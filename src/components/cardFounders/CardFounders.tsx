@@ -3,12 +3,14 @@ import { CCardGroup } from '@coreui/react';
 import { CCardImage } from '@coreui/react';
 import { CCardText } from '@coreui/react';
 import { CCardTitle } from '@coreui/react';
+import './CardsFounders.css';
+
 function CardsFounders(){
     return(
         <>
-        <CCardGroup>
+        <CCardGroup className='background-body'>
         <CCard>
-          <CCardImage orientation="top" src="/images/react.jpg" />
+          <CCardImage orientation="top" src="https://meupet.elanco.com/sites/g/files/adhwdz661/files/styles/paragraph_image/public/2020-07/gato_de_retrato_olhando_para_a_camera.jpg?itok=iXWiqVkY" />
           <CCardBody>
             <CCardTitle>Card title</CCardTitle>
             <CCardText>

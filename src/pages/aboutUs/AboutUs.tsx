@@ -1,7 +1,8 @@
-import TextAboutUs from '../../components/textAboutUs/TextAboutUs'
-import React from 'react'
+import TextAboutUs from '../../components/textAboutUs/TextAboutUs';
+import React from 'react';
 import './AboutUs.css';
 import Navbar from '../../components/statics/navbar/Navbar';
+import CardsFounders from '../../components/cardFounders/CardFounders';
 
 function AboutUs() {
     return (
@@ -10,7 +11,7 @@ function AboutUs() {
 
                 <Navbar />
                 <TextAboutUs />
-
+                <CardsFounders />
             </main>
 
         </>

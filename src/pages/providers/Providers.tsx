@@ -4,10 +4,12 @@ import { Box } from "@mui/material";
 import './Providers.css';
 import { ChangeEvent } from "react";
 import React from "react";
+import Navbar from "../../components/statics/navbar/Navbar";
 
 function Providers() {
   return (
     <>
+    <Navbar/>
     <main className='provider-body'>
       <section className='provider-section'> 
       

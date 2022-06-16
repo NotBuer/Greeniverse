@@ -30,7 +30,7 @@
   text-Align: center;
 }
 .provider-title{
-  background-color: rgb(32, 176, 32);
+  background-color: rgb(110, 221, 110);
 
  }
 .provider-body{
@@ -38,7 +38,7 @@
  text-align: center;
 }
 .provider-section{
-  background-color: rgb(134, 184, 60);
+  background-color: rgb(170, 200, 125);
  }
  .provider-form{
   display: flex;
@@ -60,11 +60,11 @@
   padding-block-start: 14px;
 }
 .provider-p{
-  background-color: rgb(189, 228, 189);
+  background-color: rgb(168, 238, 168);
   margin-top: 3%;
 }
 .provider-p2{
-  background-color: rgb(189, 228, 189);
+  background-color: rgb(168, 238, 168);
   margin-top: 0%;
 }
 

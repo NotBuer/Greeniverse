@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Box } from "@mui/material";
 import './Providers.css';
 import { ChangeEvent } from "react";
-import './Providers.css'
 import React from "react";
 
 function Providers() {

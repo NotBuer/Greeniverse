@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Typography, Card, CardActionArea, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
 import './CardProducts.css';
 import { useNavigate } from 'react-router-dom';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Stock from '../../models/StockDTO';
 import { busca } from '../../services/Services';
+import ListOrder from '../../components/listorder/ListOrder';
+import { useCart } from '../../hooks/useCart';
 
 export default function CardProducts() {
 
@@ -16,6 +19,12 @@ export default function CardProducts() {
         })
     }
 
+    const { addProduct } = useCart();
+    
+    function handleAddCart(productId: number) {
+        addProduct(productId)
+    }
+
     useEffect(() => {
 
         getProduct()
@@ -24,6 +33,7 @@ export default function CardProducts() {
 
     return (
         <>
+        
             {
                 products.map(product => {
                     return (
@@ -37,11 +47,15 @@ export default function CardProducts() {
                                     title={product.productName} />
 
                                 <CardContent>
+                                <img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" className='logoCard' />
                                     <Typography gutterBottom variant="h5" color="textPrimary" component="h4">
                                         {product.productName}
                                     </Typography>
                                     <Typography variant="body2" color="textPrimary" component="p">
                                         {product.productCategory}
+                                    </Typography>
+                                    <Typography variant="body2" color="textPrimary" component="p">
+                                        {product.productAmount}
                                     </Typography>
                                     <Typography variant="body2" color="textPrimary" component="p">
                                         {product.description}
@@ -55,7 +69,7 @@ export default function CardProducts() {
                                 <h3>
                                     R$ {product.price}
                                 </h3>
-                                <Button className='btnComprar'>
+                                <Button className='btnComprar' onClick={() => handleAddCart(product.id)}>
                                     Comprar
                                 </Button>
                             </CardActions>

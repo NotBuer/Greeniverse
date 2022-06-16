@@ -3,23 +3,28 @@ import { Container, Box, Typography } from '@mui/material';
 import CardProducts from '../../cardProducts/CardProducts';
 import './Product.css'
 import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
+import ListOrder from '../../listorder/ListOrder';
 
 
 function Product() {
   return (
     <>
-    <Navbar />
-    <Container>
-    <Box display="flex" flexWrap="wrap" justifyContent="center">
-    <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='tituloProduto'>Nossos produtos</Typography>
-    </Box>
-    <CardProducts />
-  
-  </Container>
+      <Navbar />
+
+      <h3 className='titleProduct'>Nossos<span className='colortitle'> Produtos</span></h3>
+      <div className='listAndCard'>
+        <div className='listOrder'><ListOrder /></div>
+        <Container className='screenProduct'>
+          <CardProducts />
+        </Container>
+      </div>
+      
+      <Footer />
+
     </>
   );
 }
 
 
 export default Product;
- 

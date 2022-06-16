@@ -7,112 +7,73 @@ import { Link } from 'react-router-dom'
 
 function HomeProducts() {
     return (
-        <>
-
-<Container>
-                <h2 className='tituloproduto'> Nossos Produtos </h2>
-                <Box className='cards'>
-                    <Card className='rootHome'>
-                        <CardActionArea>
-                            <CardMedia
-                                className='imgCardHome'
-                                component="img"
-                                alt="Romã"
-                                image='https://i.imgur.com/iuWmzfh.jpeg'
-                                title="Produto Batata orgânica"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Romã
-                                </Typography>
-                                <Typography variant="body2" color="textPrimary" component="p">
-                                    Romã
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions className='cardbtns'>
-                            <h3>
-                                R$ 3,99
-                            </h3>
-                            <Button className='btnComprar'>
-                                Comprar
-                            </Button>
-                        </CardActions>
-                    </Card>
 
 
+        <section className="products-section" id="products">
 
-                    <Card className='rootHome'>
-                        <CardActionArea>
-                            <CardMedia
-                                className='imgCardHome'
-                                component="img"
-                                alt="Batata"
-                                image='https://i.imgur.com/otm2alo.jpeg'
-                                title="Produto Batata orgânica"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Limão
-                                </Typography>
-                                <Typography variant="body2" color="textPrimary" component="p">
-                                   Limão de qualidade
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions className='cardbtns'>
-                            <h3>
-                                R$ 3,99
-                            </h3>
-                            <Button className='btnComprar'>
-                                Comprar
-                            </Button>
-                        </CardActions>
-                    </Card>
+            <h1 className="heading"> Nossos <span>produtos</span> </h1>
 
+            <div className="product-boxes">
 
+                 <div className="product-card">
+                    <img src="./src/img/product-1.png" alt="" />
+                    <h3>Laranja</h3>
+                    <div className="price"> R$4.99</div>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" className="btn">Comprar</a>
+                </div>
 
-                    <Card className='rootHome'>
-                        <CardActionArea>
-                            <CardMedia
-                                className='imgCardHome'
-                                component="img"
-                                alt="Batata"
-                                image='https://i.imgur.com/U7IB65J.jpeg'
-                                title="Produto Batata orgânica"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Cenoura
-                                </Typography>
-                                <Typography variant="body2" color="textPrimary" component="p">
-                                    Cenoura laranja
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions className='cardbtns'>
-                            <h3>
-                                R$ 3,45
-                            </h3>
-                            <Button className='btnComprar'>
-                                Comprar
-                            </Button>
-                        </CardActions>
-                    </Card>
-                </Box>
+                <div className="product-card">
+                    <img src="./src/img/product-2.png" alt="" />
+                    <h3>Cebola</h3>
+                    <div className="price"> R$4.99</div>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" className="btn">Comprar</a>
+                </div>
 
-                <Box className='box-mais'>
-                    <Link to='/produtos' className='link'>
-                        <Button className='btn-mais'>
-                            Veja mais
-                        </Button>
-                    </Link>
-                </Box>
+                <div className="product-card">
+                    <img src="./src/img/product-3.png" alt="" />
+                    <h3>Abacaxi</h3>
+                    <div className="price"> R$4.99</div>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" className="btn">Comprar</a>
+                </div>
 
+                <div className="product-card">
+                    <img src="./src/img/product-4.png" alt="" />
+                    <h3>Banana</h3>
+                    <div className="price"> R$4.99</div>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" className="btn">Comprar</a>
+                </div>
+            </div>
+            <a href="/allproducts" className='more-product'>Ver mais...</a>
 
-            </Container>
-
-        </>
+        </section>
     );
 }
 

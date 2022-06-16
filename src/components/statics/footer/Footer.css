@@ -17,6 +17,7 @@ footer {
   align-items: start;
   justify-content: center;
   gap: 1em;
+  margin-top: 64px;
 }
 
 footer ul {

@@ -8,11 +8,11 @@ import './CardsFounders.css';
 function CardsFounders(){
     return(
         <>
-        <CCardGroup className='background-body'>
+        <CCardGroup>
         <CCard>
-          <CCardImage orientation="top" src="https://meupet.elanco.com/sites/g/files/adhwdz661/files/styles/paragraph_image/public/2020-07/gato_de_retrato_olhando_para_a_camera.jpg?itok=iXWiqVkY" />
-          <CCardBody>
-            <CCardTitle>Card title</CCardTitle>
+          <CCardImage orientation="top" src="/assets/imgs/Uriel" />
+          <CCardBody className='background-body'>
+            <CCardTitle>Uriel Pereira</CCardTitle>
             <CCardText>
               This is a wider card with supporting text below as a natural lead-in to additional content.
               This content is a little bit longer.
@@ -24,7 +24,7 @@ function CardsFounders(){
         </CCard>
         <CCard>
           <CCardImage orientation="top" src="/images/react.jpg" />
-          <CCardBody>
+          <CCardBody className='background-body'>
             <CCardTitle>Card title</CCardTitle>
             <CCardText>
               This card has supporting text below as a natural lead-in to additional content.

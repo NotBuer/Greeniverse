@@ -4,7 +4,6 @@ import Navbar from '../../components/statics/navbar/Navbar';
 import { Box } from "@mui/material";
 import './Providers.css';
 import { ChangeEvent } from "react";
-import './Providers.css'
 import React from "react";
 
 function Providers() {

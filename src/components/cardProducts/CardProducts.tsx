@@ -6,6 +6,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Stock from '../../models/StockDTO';
 import { busca } from '../../services/Services';
 import ListOrder from '../../components/listorder/ListOrder';
+import { useCart } from '../../hooks/useCart';
 
 export default function CardProducts() {
 
@@ -16,6 +17,12 @@ export default function CardProducts() {
         await busca("/api/Stock", setProducts, {
 
         })
+    }
+
+    const { addProduct } = useCart();
+    
+    function handleAddCart(productId: number) {
+        addProduct(productId)
     }
 
     useEffect(() => {
@@ -48,6 +55,9 @@ export default function CardProducts() {
                                         {product.productCategory}
                                     </Typography>
                                     <Typography variant="body2" color="textPrimary" component="p">
+                                        {product.productAmount}
+                                    </Typography>
+                                    <Typography variant="body2" color="textPrimary" component="p">
                                         {product.description}
                                     </Typography>
                                     <Typography variant="body2" color="textPrimary" component="p">
@@ -59,9 +69,9 @@ export default function CardProducts() {
                                 <h3>
                                     R$ {product.price}
                                 </h3>
-                                <button type="submit" value="submit" className='btnComprar'>
+                                <Button className='btnComprar' onClick={() => handleAddCart(product.id)}>
                                     Comprar
-                                </button>
+                                </Button>
                             </CardActions>
                         </Card>
                     );

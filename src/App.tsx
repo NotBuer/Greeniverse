@@ -11,8 +11,9 @@ import store from './store/store';
 import Providers from './pages/providers/Providers'
 import Product from './components/statics/product/Product';
 import AboutUs from './pages/aboutUs/AboutUs';
-
-
+import { CartProvider } from './hooks/useCart';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
     useEffect(() => {
@@ -22,7 +23,9 @@ function App() {
     return (
 
         <Provider store={store}>
+            <ToastContainer />
             <Router>
+            <CartProvider>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
@@ -34,6 +37,7 @@ function App() {
                     <Route path='/payment' element={<Payment />} />
                     <Route path='/allproducts' element={<Product />} />
                 </Routes>
+                </CartProvider>
             </Router>
         </Provider>
     )

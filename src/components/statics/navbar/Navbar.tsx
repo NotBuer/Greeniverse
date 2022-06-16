@@ -1,6 +1,7 @@
 import { Console } from 'console';
 import React, { useState, ChangeEvent } from 'react';
 import { Link } from 'react-router-dom';
+import SideCart from '../../sideCart/SideCart';
 import './Navbar.css';
 
 function Navbar() {
@@ -52,7 +53,11 @@ function Navbar() {
                     </form>
                 </label>
 
-                <label className="fas fa-shopping-cart" id="cart-btn"></label>
+                <label className="fas fa-shopping-cart" id="cart-btn">
+                    <div>
+                    <SideCart />
+                    </div>
+                </label>
 
                 <label htmlFor='checkbox_login' className="fas fa-user" id="login-btn">
 

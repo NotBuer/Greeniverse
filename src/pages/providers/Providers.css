@@ -18,22 +18,9 @@
   --border:.2rem solid rgba(0,0,0,.1);
   --outline:.1rem solid rgba(0,0,0,.1);
   --outline-hover:.2rem solid var(--black);
-<<<<<<< HEAD
-=======
-}
-.gridBox{
-  margin: top 300px;;
-}
-.buttonProviders {
-  width: 100px;
-  color: black;
-  display: flex;
-  padding-left: 100px;
-  text-Align: center;
->>>>>>> 21be330618258a0867c55a26be8c0b645e0a51c8
 }
 .provider-title{
-  background-color: rgb(110, 221, 110);
+  background-color: rgb(32, 176, 32);
 
  }
 .provider-body{
@@ -41,7 +28,7 @@
  text-align: center;
 }
 .provider-section{
-  background-color: rgb(170, 200, 125);
+  background-color: rgb(134, 184, 60);
  }
  .provider-form{
   display: flex;
@@ -63,10 +50,10 @@
   padding-block-start: 14px;
 }
 .provider-p{
-  background-color: rgb(168, 238, 168);
+  background-color: rgb(189, 228, 189);
   margin-top: 3%;
 }
 .provider-p2{
-  background-color: rgb(168, 238, 168);
+  background-color: rgb(189, 228, 189);
   margin-top: 0%;
 }

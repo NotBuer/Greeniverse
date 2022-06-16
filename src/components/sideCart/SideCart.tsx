@@ -8,6 +8,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import "./SideCart.css";
 import Product from '../statics/product/Product';
 import CardProducts from '../cardProducts/CardProducts';
+import { toast } from 'react-toastify';
 
 type Anchor = 'right';
 
@@ -35,16 +36,12 @@ export default function SideCart() {
         removeProduct(productId)
     }
 
-    /*async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
-        e.preventDefault();
+    function handleClick () {
+    toast.success('Compra Realizada com Sucesso!!', {
+        theme:"colored"
+    })
+ }
 
-        if (CardProducts !== 0) {
-            try {
-                alert('Compra Finalizada com Sucesso!')
-            } catch (error) {
-                alert('Carrinho Vazio!')
-            }
-    }*/
 
     const [state, setState] = React.useState({
         right: false,
@@ -105,7 +102,7 @@ export default function SideCart() {
                 ))}
                 <Divider />
             </div>
-            <Button type='submit' value='submit' className='btn2'>
+            <Button className='btn2' type='submit' value='submit' onClick={handleClick}>
                 Finalizar Compra
             </Button>
         </>

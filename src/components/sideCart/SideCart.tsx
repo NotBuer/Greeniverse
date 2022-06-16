@@ -1,9 +1,10 @@
 import React, { ChangeEvent } from 'react';
-import { Drawer, Button, Divider,  Badge, IconButton, Typography } from '@material-ui/core';
+import { Drawer, Button, Divider, Badge, IconButton, Typography } from '@material-ui/core';
 import { CartProduct, useCart } from '../../hooks/useCart';
-import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import DeleteIcon from '@material-ui/icons/Delete';
 import "./SideCart.css";
 import Product from '../statics/product/Product';
 import CardProducts from '../cardProducts/CardProducts';
@@ -43,10 +44,6 @@ export default function SideCart() {
             } catch (error) {
                 alert('Carrinho Vazio!')
             }
-
-        } else {
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
-        }
     }*/
 
     const [state, setState] = React.useState({
@@ -63,54 +60,54 @@ export default function SideCart() {
 
     const list = (anchor: Anchor) => (
         <>
-        <div>
-            <Divider />
-            {cart.map(product => (
-                <div key={product.id} className="container-carrinho">
-                    <h3>{product?.productName}</h3>
-                    <img src={product?.productPhoto} alt={product?.productName} className='imgCart' />
-                    <h4>{product.productAmount}x</h4>
+            <div>
+                <Divider />
+                {cart.map(product => (
+                    <div key={product.id} className="container-carrinho">
+                        <h3>{product?.productName}</h3>
+                        <img src={product?.productPhoto} alt={product?.productName} className='imgCart' />
+                        <h4>{product.productAmount}x</h4>
 
-                    <div >
+                        <div >
+                            <Button
+                                className='botoes-carrinho'
+                                type="button"
+                                disabled={product.productAmount <= 1}
+                                onClick={() => handleProductDecrement(product)}
+                            >
+                                <RemoveCircleOutlineIcon />
+                            </Button>
+                            <input
+                                type="text"
+                                readOnly
+                                value={product.productAmount}
+                            />
+                            <Button
+                                className='botoes-carrinho'
+                                type="button"
+                                data-testid="increment-product"
+                                onClick={() => handleProductIncrement(product)}
+                            >
+                                <AddCircleOutlineIcon />
+                            </Button>
+                        </div>
                         <Button
-                            className='botoes-carrinho'
-                            type="button"
-                            disabled={product.productAmount <= 1}
-                            onClick={() => handleProductDecrement(product)}
-                        >
-                            <RemoveCircleIcon />
+                            variant="contained"
+                            color="secondary"
+                            className='btnDelete'
+                            onClick={() => handleRemoveProduct(product.id)}
+                            startIcon={<DeleteIcon />}>
+                            Delete
                         </Button>
-                        <input
-                            type="text"
-                            readOnly
-                            value={product.productAmount}
-                        />
-                        <Button
-                            className='botoes-carrinho'
-                            type="button"
-                            data-testid="increment-product"
-                            onClick={() => handleProductIncrement(product)}
-                        >
-                            <AddCircleIcon />
-                        </Button>
+                        <hr />
                     </div>
-                    <Button
-                        className='botoes-carrinho'
-                        type="button"
-                        variant="outlined"
-                        color="secondary"
-                        onClick={() => handleRemoveProduct(product.id)}>
-                        Remover
-                    </Button>
-                    <hr />
-                </div>
-                
-            ))}
-            <Divider />
-        </div>
-        <Button type='submit' value='submit' className='btn2'>
-        Finalizar Compra 
-        </Button>
+
+                ))}
+                <Divider />
+            </div>
+            <Button type='submit' value='submit' className='btn2'>
+                Finalizar Compra
+            </Button>
         </>
     );
 

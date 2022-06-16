@@ -14,7 +14,7 @@ interface UpdateProductAmount {
 }
 
 export interface CartProduct extends Stock {
-    quantidade: number;
+    productAmount: number;
 }
 
 interface CartContextData {
@@ -47,8 +47,8 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
                 const { data: product } = await api.get<Stock>(`/api/Stock/id/${productId}`);
 
                 if (product?.productAmount && product.productAmount > 0) {
-                    setCart([...cart, { ...product, quantidade: 1 }])
-                    localStorage.setItem(cartStorageKey, JSON.stringify([...cart, { ...product, quantidade: 1 }]))
+                    setCart([...cart, { ...product, productAmount: 1 }])
+                    localStorage.setItem(cartStorageKey, JSON.stringify([...cart, { ...product, productAmount: 1 }]))
                     toast.success(product.productName + ' adicionado ao carrinho', {
                     theme:"colored"
                     })
@@ -59,10 +59,10 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
             if (productAlreadyInCart) {
                 const { data: product } = await api.get<Stock>(`/api/Produtos/id/${productId}`);
 
-                if (product?.productAmount && (product.productAmount > productAlreadyInCart.quantidade)) {
+                if (product?.productAmount && (product.productAmount > productAlreadyInCart.productAmount)) {
                     const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
                         ...cartItem,
-                        quantidade: Number(cartItem.quantidade) + 1
+                        productAmount: Number(cartItem.productAmount) + 1
                     } : cartItem)
 
                     setCart(updatedCart)
@@ -120,7 +120,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
             const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
                 ...cartItem,
-                quantidade: amount
+                productAmount: amount
             } : cartItem)
             setCart(updatedCart)
             localStorage.setItem(cartStorageKey, JSON.stringify(updatedCart))

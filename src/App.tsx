@@ -10,9 +10,8 @@ import './App.css';
 import store from './store/store';
 import Providers from './pages/providers/Providers'
 import Product from './components/statics/product/Product';
-import AboutUs from './pages/aboutus/AboutUs';
-
-
+import AboutUs from './pages/aboutUs/AboutUs';
+import { CartProvider } from './hooks/useCart';
 
 function App() {
     useEffect(() => {
@@ -23,6 +22,7 @@ function App() {
 
         <Provider store={store}>
             <Router>
+            <CartProvider>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
@@ -34,6 +34,7 @@ function App() {
                     <Route path='/payment' element={<Payment />} />
                     <Route path='/allproducts' element={<Product />} />
                 </Routes>
+                </CartProvider>
             </Router>
         </Provider>
     )

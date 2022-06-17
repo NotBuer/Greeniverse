@@ -47,7 +47,7 @@ function Login() {
                 autoClose: 7000,
                 hideProgressBar: false,
                 closeOnClick: true,
-                pauseOnHover: true,
+                pauseOnHover: false,
                 draggable: false,
                 progress: undefined,
                 type: "success",
@@ -56,8 +56,17 @@ function Login() {
             });
 
         } catch (error) {
-            console.log(error);
-            alert("Email ou senha incorretos, verifique e tente novamente!");
+            toast.error("Email ou senha incorretos, verifique e tente novamente!", {
+                autoClose: 7000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+                type: "error",
+                theme: "colored"
+
+            });
         }
     }
 

@@ -6,6 +6,7 @@ import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } 
 import { Box } from "@mui/material";
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './RegisterUser.css';
+import { toast } from "react-toastify";
 
 function RegisterUser() {
 
@@ -61,14 +62,43 @@ function RegisterUser() {
         if (confirmPassword === user.password) {
             try {
                 await registerUser(`/api/User/register`, user, setUserResult)
-                alert('Usuario cadastrado com sucesso!')
+                toast.info("Usuario cadastrado com sucesso!", {
+                    autoClose: 7000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                    type: "success",
+                    theme: "colored"
+    
+                });
             } catch (error) {
-                alert('Usuario já cadastrado, tente outro email!')
-                console.log(error)
+                toast.error("Usuario já cadastrado, tente outro email!", {
+                    autoClose: 7000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                    type: "error",
+                    theme: "colored"
+    
+                });
             }
 
         } else {
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+            toast.error("Dados inconsistentes. Favor verificar as informações de cadastro.", {
+                autoClose: 7000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+                type: "error",
+                theme: "colored"
+
+            });
         }
     }
 

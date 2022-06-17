@@ -8,6 +8,7 @@
     }
 }
 
+
 .logoCard{
     width: 30px !important;
     height: 40px !important;
@@ -36,19 +37,14 @@
 }
 
 .btnComprar {
-    width: 125px;
-    margin-top: -10px;
-    background-color: var(--green);
-    background-position: 100% 0;
-    background-size: 200% 200%;
-    color: white !important;
-    border-radius: 15px !important;
-    padding: 12px 40px;
+    display: inline-block;
+    padding: 10px 20px;
     font-size: 16px;
-    font-weight: 200;
-    text-decoration: none;
-    box-shadow: 5px 5px 18px rgba(0, 40, 120, 0.397);
-    transition: all 0.5s ease !important;
+    border-radius: 8px;
+    border: 1px solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: var(--green);
 }
 
 

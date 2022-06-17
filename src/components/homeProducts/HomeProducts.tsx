@@ -16,7 +16,7 @@ function HomeProducts() {
             <div className="product-boxes">
 
                  <div className="product-card">
-                    <img className='imgMelancia' src="https://i.imgur.com/Gn9GBkf.png" alt="" />
+                    <img className='imgcards' src="https://i.imgur.com/Gn9GBkf.png" alt="" />
                     <h3>Melancia</h3>
                     <div className="price"> R$11.00</div>
                     <div className="stars">
@@ -30,7 +30,7 @@ function HomeProducts() {
                 </div>
 
                 <div className="product-card">
-                    <img className='imgRepolho'src="https://i.imgur.com/gpCNczH.jpg" alt="" />
+                    <img className='imgcards'src="https://i.imgur.com/gpCNczH.jpg" alt="" />
                     <h3>Repolho</h3>
                     <div className="price"> R$7.89</div>
                     <div className="stars">
@@ -44,7 +44,7 @@ function HomeProducts() {
                 </div>
 
                 <div className="product-card">
-                    <img className='imgBanana' src="https://i.imgur.com/LU22SbH.jpg" alt="" />
+                    <img className='imgcards' src="https://i.imgur.com/LU22SbH.jpg" alt="" />
                     <h3>Banana</h3>
                     <div className="price"> R$11.7</div>
                     <div className="stars">
@@ -58,7 +58,7 @@ function HomeProducts() {
                 </div>
 
                 <div className="product-card">
-                    <img className='imgLaranja' src="https://i.imgur.com/5WeyVOf.png" alt="" />
+                    <img className='imgcards' src="https://i.imgur.com/5WeyVOf.png" alt="" />
                     <h3>Laranja-Lima</h3>
                     <div className="price"> R$9.90</div>
                     <div className="stars">

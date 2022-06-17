@@ -1,4 +1,4 @@
-<img src="https://imgur.com/gallery/2m4cVfX" alt="logo" width="500" height="600">
+<img src="https://imgur.com/JhpkTkI" alt="logo" width="500" height="600">
 <h2>EMERGENCE:<h2>
 <p>Greeniverse emerged as a project made by group 1 of class 1 of .Net of the architect integrator project by the ong Generation Brasil.</p>
 <h2>ABOUT OUR PROJECT:<h2>
@@ -10,6 +10,7 @@ That way, we deliver a product that dialogues directly with small and medium pro
 <p>
 The Greeniverse website makes the connection of small and medium producers to consumers (both individuals and legal entities) providing greater ease to those interested in buying organic products. The platform functions as an online market with a large distribution area, working in an agile and efficient way. In addition, producers can register directly on   the platform and will be evaluated by our administrative team, in addition we will redirect donations to ogs that take care of the problem of hunger and malnutrition.
 </p>
+br
 <h2>TEAM COMPONENTS 1:<h2>
 <ul>
 <li>Kauane Farias.</li>
@@ -20,8 +21,9 @@ The Greeniverse website makes the connection of small and medium producers to co
 <li>Thamyres Vitoria da Silva Cavalcanti.</li>
 <li>Rodrigo da Silva França.</li>
 </ul>
- <p>Link of linkedin components:</p> <a href="https://linktr.ee/g1dotnet">
-h2<Languages and tools used:>h2
+<a Link of linkedin components: href="https://linktr.ee/g1dotnet">
+ br
+<h2>Languages and tools used:<h2>
 <ul>
 <li>C#</li>
 <li>type Script</li>

@@ -64,3 +64,8 @@
   color: var(--green);
   font-size: 22px;
 }
+
+.imgcards{
+  width: 100px;
+  height: 100px;
+}

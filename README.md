@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+<img src="https://imgur.com/gallery/2m4cVfX" alt="logo" width="500" height="600">
+h2<EMERGENCE:>h2
+<p>Greeniverse emerged as a project made by group 1 of class 1 of .Net of the architect integrator project by the ong Generation Brasil.</p>
+h2<ABOUT OUR PROJECT:>
+<p>
+We are an e-commerce focused on following the parameters of ODS 2 "Ending hunger, achieving food security and improving nutrition and promoting sustainable agriculture". In this way, we deliver a differential e-commerce to those present in the market given to their purpose of birth and their services provided.
+That way, we deliver a product that dialogues directly with small and medium producers, which redirects donations made on the site to people in situations of food shortage and delivers quality organic products in an agile and ethical way. Consequently, we care about the whole process from harvest to delivery.
+</p>
+h2<HOW DOES THE PLATFORM WORK?>h2
+<p>
+The Greeniverse website makes the connection of small and medium producers to consumers (both individuals and legal entities) providing greater ease to those interested in buying organic products. The platform functions as an online market with a large distribution area, working in an agile and efficient way. In addition, producers can register directly on   the platform and will be evaluated by our administrative team, in addition we will redirect donations to ogs that take care of the problem of hunger and malnutrition.
+</p>
+h2<TEAM COMPONENTS 1:>h2
+<ul>
+<li>Kauane Farias.</li>
+<li>Gabriela Maria Dantas Peres.</li>
+<li>Murilo Andrade da Gama.</li>
+<li>Uriel Pereira Alves.</li>
+<li>Matheus Alexandre Catel de Barros Soares.</li>
+<li>Thamyres Vitoria da Silva Cavalcanti.</li>
+<li>Rodrigo da Silva França.</li>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ <p>Link of linkedin components:</p> <a href="https://linktr.ee/g1dotnet">
+h2<Languages and tools used:>h2
+<ul>
+<li>C#</li>
+<li>type Script</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>.NET</li>
+<li>ASP.NET</li>
+<li>ReactJS</li>
+<li>Material UI</li>
+<li>React-Redux</li>
+<li>MSTest</li>
+<li>Postman</li>
+<li>JWT Security</li>
+<li>SQL Server</li>
+<li>Swagger</li>
+<li>Heroku</li>
+<li>Visual studio code</li>
+<li>Visual studio</li>
+</ul>

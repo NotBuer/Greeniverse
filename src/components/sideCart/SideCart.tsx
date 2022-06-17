@@ -9,6 +9,7 @@ import "./SideCart.css";
 import Product from '../statics/product/Product';
 import CardProducts from '../cardProducts/CardProducts';
 import { toast } from 'react-toastify';
+import BasicModal from '../payment/modal/Modal';
 
 type Anchor = 'right';
 
@@ -105,6 +106,9 @@ export default function SideCart() {
             <Button className='btn2' type='submit' value='submit' onClick={handleClick}>
                 Finalizar Compra
             </Button>
+            <div className='modalCart'>
+            <BasicModal />
+            </div>
         </>
     );
 

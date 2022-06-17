@@ -54,12 +54,25 @@ footer ul {
   padding: 0.5em 0;
 }
 
-.btn{
-	margin: 0;
+.subscribe_input{
+  width: 170px;
+  padding: 6px 7px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  background: none;
+  
 }
 
-.subscribe-input {
-  width: auto;
+.subscribe_register:hover{
+  background: var(--green);
+  color: #fff;
+}
+
+.subscribe_register {
+  width: 100px;
   flex: 1;
   background: transparent;
   border: 0.06em solid var(--black);
@@ -68,8 +81,9 @@ footer ul {
   padding: 0.5em;
   border-radius: 0.3em;
   transition: all 0.25s ease 0s;
-  display: inline-block;
-  color: white;
+  text-align: center;
+  color: black;
+  
 }
 
 .subscribe-input:focus {

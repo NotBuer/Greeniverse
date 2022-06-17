@@ -35,7 +35,7 @@
     border-radius: 20px;
 }
 
-#mnId section #img{
+#mnId section #imgLogin{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,14 +44,19 @@
     border-radius: 20px;
 }
 
-.imglogo{
-    width: 100px;
-    align-self: start;
+.imgLogoLogin{
+    width: 300px;
+    
 }
 
-#Iconback {
+#iconBack {
     padding-right: 400px;
+    margin-top: -35px;
     
+}
+
+.linkLogin{
+    margin-top: 20px;
 }
 
 .text2{
@@ -66,7 +71,7 @@
 }
 
 .Icons{
-    gap: 30px;
+    gap: 40px;
 }
 
 .password-container #eye {

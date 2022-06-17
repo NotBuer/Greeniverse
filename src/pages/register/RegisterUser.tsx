@@ -75,7 +75,7 @@ function RegisterUser() {
     return (
         <>
             <main id='mnRegister'>
-                <section>
+                <section className="sectionRegisterUser">
                     <article id='img2'>
                         <img src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
                     </article>

@@ -69,9 +69,9 @@ export default function CardProducts() {
                                 <h3>
                                     R$ {product.price}
                                 </h3>
-                                <Button className='btnComprar' onClick={() => handleAddCart(product.id)}>
+                                <button className='btnComprar' onClick={() => handleAddCart(product.id)}>
                                     Comprar
-                                </Button>
+                                </button>
                             </CardActions>
                         </Card>
                     );

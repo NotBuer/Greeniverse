@@ -7,6 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css';
+import { registerUser } from '../../../services/Services';
 
 function Footer() {
     return (
@@ -48,10 +49,10 @@ function Footer() {
 
                 <span className="col">
                     <div className="subscribe-form-holder">
-                        <h3 className="form-title">Se inscreva no newsletter</h3>
+                        <h3 className="form-title">Se inscreva no Greeniverse</h3>
                         <form action="#" className="subscribe-form">
-                            <input type="email" name="email" id="email" className="email subscribe-input" autoComplete="off" placeholder="Seu email" />
-                            <button type="submit" className="btn">Inscreva-se</button>
+                            <input type="email" name="email" id="email" className="subscribe_input"  placeholder="Seu email" />
+                            <a href="/registeruser" className="subscribe_register">Inscreva-se</a>
                         </form>
                     </div>
                     <div className="social-media">

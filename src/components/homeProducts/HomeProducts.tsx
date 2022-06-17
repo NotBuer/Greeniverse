@@ -16,9 +16,9 @@ function HomeProducts() {
             <div className="product-boxes">
 
                  <div className="product-card">
-                    <img src="./src/img/product-1.png" alt="" />
-                    <h3>Laranja</h3>
-                    <div className="price"> R$4.99</div>
+                    <img className='imgMelancia' src="https://i.imgur.com/Gn9GBkf.png" alt="" />
+                    <h3>Melancia</h3>
+                    <div className="price"> R$11.00</div>
                     <div className="stars">
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
@@ -26,13 +26,13 @@ function HomeProducts() {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star-half-alt"></i>
                     </div>
-                    <a href="#" className="btn">Comprar</a>
+                    <a href="/allproducts" className="btn">Comprar</a>
                 </div>
 
                 <div className="product-card">
-                    <img src="./src/img/product-2.png" alt="" />
-                    <h3>Cebola</h3>
-                    <div className="price"> R$4.99</div>
+                    <img className='imgRepolho'src="https://i.imgur.com/gpCNczH.jpg" alt="" />
+                    <h3>Repolho</h3>
+                    <div className="price"> R$7.89</div>
                     <div className="stars">
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
@@ -40,27 +40,13 @@ function HomeProducts() {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star-half-alt"></i>
                     </div>
-                    <a href="#" className="btn">Comprar</a>
+                    <a href="/allproducts" className="btn">Comprar</a>
                 </div>
 
                 <div className="product-card">
-                    <img src="./src/img/product-3.png" alt="" />
-                    <h3>Abacaxi</h3>
-                    <div className="price"> R$4.99</div>
-                    <div className="stars">
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" className="btn">Comprar</a>
-                </div>
-
-                <div className="product-card">
-                    <img src="./src/img/product-4.png" alt="" />
+                    <img className='imgBanana' src="https://i.imgur.com/LU22SbH.jpg" alt="" />
                     <h3>Banana</h3>
-                    <div className="price"> R$4.99</div>
+                    <div className="price"> R$11.7</div>
                     <div className="stars">
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
@@ -68,7 +54,21 @@ function HomeProducts() {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star-half-alt"></i>
                     </div>
-                    <a href="#" className="btn">Comprar</a>
+                    <a href="/allproducts" className="btn">Comprar</a>
+                </div>
+
+                <div className="product-card">
+                    <img className='imgLaranja' src="https://i.imgur.com/5WeyVOf.png" alt="" />
+                    <h3>Laranja-Lima</h3>
+                    <div className="price"> R$9.90</div>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="/allproducts" className="btn">Comprar</a>
                 </div>
             </div>
             <a href="/allproducts" className='more-product'>Ver mais...</a>

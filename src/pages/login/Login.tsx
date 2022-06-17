@@ -6,6 +6,8 @@ import User from '../../models/User';
 import AuthenticationDTO from '../../models/AuthenticationDTO';
 import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 import './Login.css';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/actions';
 import { toast } from 'react-toastify';
@@ -81,11 +83,9 @@ function Login() {
                         <form onSubmit={onSubmit} id='form_login'>
                             <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
                             <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
-                        </form>
-                        <div>
                             <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
-                        </div>
-
+                        </form>
+                        
                         <Box className='linkLogin'>
                             <Link to='/registeruser'>
                                 <Typography variant='subtitle1' gutterBottom align='center' className='texts1'> Não tem uma conta ainda? Cadastre-se </Typography>

@@ -20,15 +20,22 @@
   --outline-hover:.2rem solid var(--black);
 }
 .provider-title{
-  background-color: rgb(32, 176, 32);
+  background-color: #eee;
+  padding-top: 20px;
+  font-size: 30px;
 
  }
+ .provider-title span{
+  color: var(--green);
+  display: inline-block;
+  padding: 8px 16px;
+}
 .provider-body{
  margin-top: 100px;
  text-align: center;
 }
 .provider-section{
-  background-color: rgb(134, 184, 60);
+  background-color: #eee;
  }
  .provider-form{
   display: flex;
@@ -42,18 +49,38 @@
   display: flex;
   flex-direction: row-reverse;
   padding-inline-start: 14px;
+  border-radius: 20px;
 }
 .provider-input2{
   padding: 100px 250px;
   margin-top: 3%;
   padding-inline-start: 14px;
   padding-block-start: 14px;
+  border-radius: 20px;
 }
 .provider-p{
-  background-color: rgb(189, 228, 189);
+  background-color: #eee;
   margin-top: 3%;
 }
 .provider-p2{
-  background-color: rgb(189, 228, 189);
+  background-color: #eee;
   margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+.btn5{
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+.btn5:hover{
+  background: var(--green);
+  color: #fff;
 }

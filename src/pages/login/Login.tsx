@@ -72,7 +72,7 @@ function Login() {
             <main id='mnId'>
                 <section>
                     <article id='form_login'>
-                        <a id='Iconback' href="http://localhost:3000/Home" target="black" rel="noopener noreferrer">
+                        <a id='iconBack' href="http://localhost:3000/Home" target="black" rel="noopener noreferrer">
                             <ArrowBackSharpIcon style={{ fontSize: 30, color: "black", alignItems: "flex-start" }} />
                         </a>
 
@@ -81,18 +81,20 @@ function Login() {
                         <form onSubmit={onSubmit} id='form_login'>
                             <TextField value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' size='small' />
                             <TextField value={user.password} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' size='small' />
-                            <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
                         </form>
+                        <div>
+                            <Button className='buttonLogin' type='submit' variant='contained' size="small" > Login </Button>
+                        </div>
 
-                        <Box>
+                        <Box className='linkLogin'>
                             <Link to='/registeruser'>
                                 <Typography variant='subtitle1' gutterBottom align='center' className='texts1'> Não tem uma conta ainda? Cadastre-se </Typography>
                             </Link>
                         </Box>
 
                     </article>
-                    <article id='img'>
-                        <img src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
+                    <article id='imgLogin'>
+                        <img className='imgLogoLogin' src="https://i.imgur.com/G5Vhf5L.png" alt="Logo" />
                     </article>
                 </section>
             </main>

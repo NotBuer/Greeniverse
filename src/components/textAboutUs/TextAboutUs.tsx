@@ -6,7 +6,7 @@ function TextAboutUs() {
     return (
         <>
             <main id="about">
-                <section>
+                <section className='Section1'>
 
                     <div>
                         <h2>QUEM SOMOS?</h2>
@@ -15,7 +15,7 @@ function TextAboutUs() {
                     <img src="https://agriseiva.com.br/wp-content/uploads/2019/03/Agricultura-de-precis%C3%A3o.jpeg" alt="Foto do murilo" />
                 </section>
 
-                <section>
+                <section className='Section2'>
                     <img src="https://www.fundacao1demaio.org.br/media/2021/07/woman-hat-holding-funnel-works-garden-2-scaled.jpg" alt="" />
                     <div>
                         <h2>POR QUE COMPRAR NO GREENIVERSE?</h2>
@@ -24,7 +24,7 @@ function TextAboutUs() {
 
                 </section>
 
-                <section>
+                <section className='Section3'>
                     <div>
                         <h2>COMO SURGIU A IDEIA?</h2>
                         <p>O surgimento do greeniverse se deu através de ideias de integrantes do grupo 1 da primeira turma .Net no projeto integrador no Bootcamp da Generation Brasil com o intuito de sanar as necessidades do objetivo 2 da ONU.</p>
@@ -32,7 +32,7 @@ function TextAboutUs() {
                     <img src="https://revistacampoenegocios.com.br/wp-content/uploads/2021/06/Tecnologia.jpg" alt="" />
                 </section>
 
-                <section>
+                <section className='Section4'>
                     <img src="https://www.brasilagro.com.br/uploads/conteudo/conteudo/2018/08/dEBSh/supercana-TOqB64_510x400.jpg" alt="" />
                     <div>
                         <h2>COMO FUNCIONA A PLATAFORMA?</h2>

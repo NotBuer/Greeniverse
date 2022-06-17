@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+<style>
+section{
+font-size:40px;
+font-family:poppins;
+background-color:#5B8866;
+align-itens:center;
+text-align:center;
+}
+</style>
+
+}
 <img src="https://i.imgur.com/lhUs159.jpg" alt="logo">
+<section>
 <h2>EMERGENCE:<h2>
 <p>Greeniverse emerged as a project made by group 1 of class 1 of .Net of the architect integrator project by the ong Generation Brasil.</p>
 <h2>ABOUT OUR PROJECT:<h2>
@@ -43,3 +56,4 @@ The Greeniverse website makes the connection of small and medium producers to co
 <li>Visual studio code</li>
 <li>Visual studio</li>
 </ul>
+<section/>

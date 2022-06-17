@@ -10,7 +10,7 @@ That way, we deliver a product that dialogues directly with small and medium pro
 <p>
 The Greeniverse website makes the connection of small and medium producers to consumers (both individuals and legal entities) providing greater ease to those interested in buying organic products. The platform functions as an online market with a large distribution area, working in an agile and efficient way. In addition, producers can register directly on   the platform and will be evaluated by our administrative team, in addition we will redirect donations to ogs that take care of the problem of hunger and malnutrition.
 </p>
-br
+<br>
 <h2>TEAM COMPONENTS 1:<h2>
 <ul>
 <li>Kauane Farias.</li>
@@ -21,8 +21,8 @@ br
 <li>Thamyres Vitoria da Silva Cavalcanti.</li>
 <li>Rodrigo da Silva França.</li>
 </ul>
-<a Link of linkedin components: href="https://linktr.ee/g1dotnet">
- br
+<a href="https://linktr.ee/g1dotnet">
+ <br>
 <h2>Languages and tools used:<h2>
 <ul>
 <li>C#</li>

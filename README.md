@@ -21,7 +21,7 @@ The Greeniverse website makes the connection of small and medium producers to co
 <li>Thamyres Vitoria da Silva Cavalcanti.</li>
 <li>Rodrigo da Silva França.</li>
 </ul>
-<a href="https://linktr.ee/g1dotnet">
+<a href="https://linktr.ee/g1dotnet"/>
  <br>
 <h2>Languages and tools used:<h2>
 <ul>

@@ -1,4 +1,4 @@
-<img src="https://imgur.com/JhpkTkI" alt="logo" width="500" height="600">
+<img src="https://i.imgur.com/lhUs159.jpg" alt="logo" width="500" height="600">
 <h2>EMERGENCE:<h2>
 <p>Greeniverse emerged as a project made by group 1 of class 1 of .Net of the architect integrator project by the ong Generation Brasil.</p>
 <h2>ABOUT OUR PROJECT:<h2>
@@ -21,7 +21,7 @@ The Greeniverse website makes the connection of small and medium producers to co
 <li>Thamyres Vitoria da Silva Cavalcanti.</li>
 <li>Rodrigo da Silva França.</li>
 </ul>
-<a href="https://linktr.ee/g1dotnet"/>
+<a href="https://linktr.ee/g1dotnet"></a>
  <br>
 <h2>Languages and tools used:<h2>
 <ul>

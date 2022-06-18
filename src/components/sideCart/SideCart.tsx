@@ -10,12 +10,19 @@ import Product from '../statics/product/Product';
 import CardProducts from '../cardProducts/CardProducts';
 import { toast } from 'react-toastify';
 import BasicModal from '../payment/modal/Modal';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokenReducer';
+import { useNavigate } from 'react-router-dom';
 
 type Anchor = 'right';
 
 export default function SideCart() {
 
+    let navigate = useNavigate();
     const { cart, updateProductAmount, removeProduct } = useCart();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     function handleProductIncrement(product: CartProduct) {
         const IncrementArguments = {
@@ -37,11 +44,28 @@ export default function SideCart() {
         removeProduct(productId)
     }
 
-    function handleClick () {
-    toast.success('Compra Realizada com Sucesso!!', {
-        theme:"colored"
-    })
- }
+    function handleClick() {
+        if (token == "") {
+            toast.error('Você precisa estar logado para finalizar a compra!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined
+            });
+            navigate("/login")
+
+        }
+        else {
+
+            toast.success('Compra Realizada com Sucesso!!', {
+                theme: "colored"
+            })
+        }
+    }
 
 
     const [state, setState] = React.useState({
@@ -107,7 +131,7 @@ export default function SideCart() {
                 Finalizar Compra
             </Button>
             <div className='modalCart'>
-            <BasicModal />
+                <BasicModal />
             </div>
         </>
     );

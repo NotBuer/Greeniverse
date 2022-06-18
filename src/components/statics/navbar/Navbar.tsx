@@ -1,12 +1,23 @@
 import { Console } from 'console';
 import React, { useState, ChangeEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import useLocalStorage from 'react-use-localstorage';
+import { addToken } from '../../../store/tokens/actions';
+import { TokenState } from '../../../store/tokens/tokenReducer';
 import SideCart from '../../sideCart/SideCart';
 import './Navbar.css';
 
 function Navbar() {
 
+    let navigate = useNavigate();
     const [menuActive, setMenuActive] = useState(false)
+    const [id, setId] = useLocalStorage('id');
+    const dispatch = useDispatch();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     function showMenu() {
         setMenuActive(true)
@@ -20,62 +31,119 @@ function Navbar() {
 
     }
 
-    async function OnSubmit(e: ChangeEvent<HTMLFormElement>) {
-        e.preventDefault();
+    function goLogout() {
+        dispatch(addToken(''));
+        setId('')
+        toast.info('Usuario deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: 'colored',
+            progress: undefined
 
-        // TODO: Implement search query...
+        });
+        navigate('/')
     }
 
-    return (
+        if (token != "") {
+            return (
 
-        <nav id='navbar'>
+                <nav id='navbar'>
+        
+                    <section id="logo-section">
+                        <a href="/home#banner" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
+                    </section>
+        
+                    <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
+                        <Link to="/home">Home</Link>
+                        <a href="/home#features">Benefícios</a>
+                        <a href="/allproducts">Produtos</a>
+                        <Link to="/providers">Seja um fornecedor</Link>
+                        <Link to="/aboutus">Sobre nós</Link>
+                    </section>
+        
+                    <section id='icons'>
+                        <label className="fas fa-bars" id="menu-btn" onClick={showMenu}></label>
+        
+                        <label htmlFor='checkbox_search' className="fas fa-search" id="search-btn">
+                            <input type="checkbox" name="checkbox_search" id="checkbox_search" />
+                            <form id='search-form'>
+                                <input type="search" id='search-box' placeholder='buscar produtos...' />
+                                <label htmlFor="searc-box" className='fas fa-search'></label>
+                            </form>
+                        </label>
+        
+                        <label className="fas fa-shopping-cart" id="cart-btn">
+                            <div>
+                                <SideCart />
+                            </div>
+                        </label>
+        
+                        <label htmlFor='checkbox_login' className="fas fa-user" id="login-btn">
+        
+                            <input type="checkbox" name="checkbox_login" id="checkbox_login" />
+                            <form className="login-form">
+                            <a href='#' className="btn" onClick={goLogout}>Logout</a>
+                            </form>
+                        </label>
+                    </section>  
+                </nav>
+        
+            )
+        }
+        
+        else {
+            return (
 
-            <section id="logo-section">
-                <a href="/home#banner" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
-            </section>
+                <nav id='navbar'>
+        
+                    <section id="logo-section">
+                        <a href="/home#banner" id="logo"><img src="https://i.imgur.com/ptzY2Mh.png" alt="logo" /> Greeniverse</a>
+                    </section>
+        
+                    <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
+                        <Link to="/home">Home</Link>
+                        <a href="/home#features">Benefícios</a>
+                        <a href="/allproducts">Produtos</a>
+                        <Link to="/providers">Seja um fornecedor</Link>
+                        <Link to="/aboutus">Sobre nós</Link>
+                    </section>
+        
+                    <section id='icons'>
+                        <label className="fas fa-bars" id="menu-btn" onClick={showMenu}></label>
+        
+                        <label htmlFor='checkbox_search' className="fas fa-search" id="search-btn">
+                            <input type="checkbox" name="checkbox_search" id="checkbox_search" />
+                            <form id='search-form'>
+                                <input type="search" id='search-box' placeholder='buscar produtos...' />
+                                <label htmlFor="searc-box" className='fas fa-search'></label>
+                            </form>
+                        </label>
+        
+                        <label className="fas fa-shopping-cart" id="cart-btn">
+                            <div>
+                                <SideCart />
+                            </div>
+                        </label>
+        
+                        <label htmlFor='checkbox_login' className="fas fa-user" id="login-btn">
+        
+                            <input type="checkbox" name="checkbox_login" id="checkbox_login" />
+                            <form className="login-form">
+                                <h3>Fazer Login</h3>
+                            <a href="/login" className="btn">Logar</a>
+                            <a href="/registeruser" className="btn">Cadastrar</a>
+                            </form>
+                        </label>
+                    </section>       
+                </nav>       
+            )
+        }
+    }
 
-            <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
-                <Link to="/home">Home</Link>
-                <a href="/home#features">Benefícios</a>
-                <a href="/allproducts">Produtos</a>
-                <Link to="/providers">Seja um fornecedor</Link>
-                <Link to="/aboutus">Sobre nós</Link>
-            </section>
-
-            <section id='icons'>
-                <label className="fas fa-bars" id="menu-btn" onClick={showMenu}></label>
-
-                <label htmlFor='checkbox_search' className="fas fa-search" id="search-btn">
-                    <input type="checkbox" name="checkbox_search" id="checkbox_search" />
-                    <form id='search-form'>
-                        <input type="search" id='search-box' placeholder='buscar produtos...' />
-                        <label htmlFor="searc-box" className='fas fa-search'></label>
-                    </form>
-                </label>
-
-                <label className="fas fa-shopping-cart" id="cart-btn">
-                    <div>
-                    <SideCart />
-                    </div>
-                </label>
-
-                <label htmlFor='checkbox_login' className="fas fa-user" id="login-btn">
-
-                    <input type="checkbox" name="checkbox_login" id="checkbox_login" />  
-                    <form className="login-form">
-                        <h2> Fazer Login</h2>
-                        <a href="/login" className="btn">Logar</a>
-                        <a href="/registeruser" className="btn">Cadastrar</a>
-                    </form>
-                </label>
-            </section>
-
-
-
-
-        </nav>
-
-    )
-}
+    
 
 export default Navbar;

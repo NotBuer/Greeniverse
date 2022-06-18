@@ -13,7 +13,7 @@ import Product from './components/statics/product/Product';
 import { CartProvider } from './hooks/useCart';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AboutUs from './pages/aboutus/AboutUs';
+import AboutUs from './pages/aboutUs/AboutUs';
 
 function App() {
     useEffect(() => {

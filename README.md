@@ -48,3 +48,17 @@ The Greeniverse website makes the connection of small and medium producers to co
 * [Swagger](https://swagger.io/docs/)
 * [Heroku](https://devcenter.heroku.com/categories/reference)
 * [IDES: VScode and VS]()
+<table>
+  <tr>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/2254731?s=400&u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&v=4" width="100px;" alt=""/><br /><sub><b>Diego Fernandes</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/4669899?s=460&u=806503605676192b5d0c363e4490e13d8127ed64&v=4" width="100px;" alt=""/><br /><sub><b>Cleiton Souza</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/861751?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Robson Marques</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/16831337?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Claudio Orlandi</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ThamyC1001"><img style="border-radius: 50%;" src="https://imgur.com/gallery/sTMj1OM" width="100px;" alt="Thammy"/><br /><sub><b>Thamyres Cavalcanti</b></sub></a><br /><a href="https://github.com/ThamyC1001" title="github">🚀</a></td>
+    <td align="center"><a href="https://github.com/urielpereiraalves"><img style="border-radius: 50%;" src="https://imgur.com/gallery/DoKdYL0" width="100px;" alt=""/><br /><sub><b>Uriel Pereira</b></sub></a><br /><a href="https://github.com/urielpereiraalves" title="github">🚀</a></td>
+    <td align="center"><a href="https://github.com/kaufariax"><img style="border-radius: 50%;" src="https://imgur.com/gallery/ee3jr3R" width="100px;" alt="Kau"/><br /><sub><b>Kaune Farias</b></sub></a><br /><a href="https://github.com/kaufariax" title="github">
+    <td align="center"><a href="https://github.com/GabrielaPeres"><img style="border-radius: 50%;" src="https://imgur.com/gallery/CGexvBq" width="100px;" alt="Gabi"/><br /><sub><b>Gabriela Peres</b></sub><a href="https://github.com/GabrielaPeres" title="github">🚀
+    </tr>
+</table

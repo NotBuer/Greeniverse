@@ -48,3 +48,17 @@ The Greeniverse website makes the connection of small and medium producers to co
 * [Swagger](https://swagger.io/docs/)
 * [Heroku](https://devcenter.heroku.com/categories/reference)
 * [IDES: VScode and VS]()
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/MuriloAGama"><img style="border-radius: 50%;" src="" width="100px;" alt="Murilo"/><br /><sub><b>Murilo Gama</b></sub></a><br /><a href="https://github.com/MuriloAGama" title="github">👨‍🚀</a></td>
+    <td align="center"><a href=""><img style="border-radius: 50%;" src="" width="100px;" alt="Rodrigo"/><br /><sub><b>Rodrigo França</b></sub></a><br /><a href="https://github.com/NotBuer" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://github.com/NotBuer"><img style="border-radius: 50%;" src="" width="100px;" alt="Rodrigo"/><br /><sub><b>Robson Marques</b></sub></a><br /><a href="https://github.com/NotBuer" title="github">👨‍🚀</a></td>
+    <td align="center"><a href="https://github.com/cateldev"><img style="border-radius: 50%;" src="" width="100px;" alt="Catel"/><br /><sub><b>Matheus Catel</b></sub></a><br /><a href="https://github.com/cateldev" title="github">🚀</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ThamyC1001"><img style="border-radius: 50%;" src="https://imgur.com/rg4NlOJ" width="100px;" alt="Thammy"/><br /><sub><b>Thamyres Cavalcanti</b></sub></a><br /><a href="https://github.com/ThamyC1001" title="github">🚀</a></td>
+    <td align="center"><a href="https://github.com/urielpereiraalves"><img style="border-radius: 50%;" src="https://imgur.com/gallery/DoKdYL0" width="100px;" alt="Uri"/><br /><sub><b>Uriel Pereira</b></sub></a><br /><a href="https://github.com/urielpereiraalves" title="github">🚀</a></td>
+    <td align="center"><a href="https://github.com/kaufariax"><img style="border-radius: 50%;" src="https://imgur.com/h8XpIXx" width="100px;" alt="Kau"/><br /><sub><b>Kaune Farias</b></sub></a><br /><a href="https://github.com/kaufariax" title="github">
+    <td align="center"><a href="https://github.com/GabrielaPeres"><img style="border-radius: 50%;" src="https://imgur.com/gallery/CGexvBq" width="100px;" alt="Gabi"/><br /><sub><b>Gabriela Peres</b></sub><a href="https://github.com/GabrielaPeres" title="github">🚀
+    </tr>
+</table

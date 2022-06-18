@@ -1,5 +1,6 @@
 # Greeniverse
-<br/>
+
+
 ![logo](https://i.imgur.com/lhUs159.jpg)
 
 ## EMERGENCE:
@@ -16,7 +17,7 @@ That way, we deliver a product that dialogues directly with small and medium pro
 <p>
 The Greeniverse website makes the connection of small and medium producers to consumers (both individuals and legal entities) providing greater ease to those interested in buying organic products. The platform functions as an online market with a large distribution area, working in an agile and efficient way. In addition, producers can register directly on   the platform and will be evaluated by our administrative team, in addition we will redirect donations to ogs that take care of the problem of hunger and malnutrition.
 </p>
-<br/>
+
 
 ## Authors
 1. Gabriela Maria Dantas Peres.
@@ -26,9 +27,9 @@ The Greeniverse website makes the connection of small and medium producers to co
 5. Rodrigo da Silva França.
 6. Thamyres Vitoria da Silva Cavalcanti.
 7. Uriel Pereira Alves.
-<br/>
+
 [linkedin of our team]<https://linktr.ee/g1dotnet>
- <br/>
+ 
 
 ## Languages and tools used:
 * [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)

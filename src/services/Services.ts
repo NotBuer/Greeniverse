@@ -24,3 +24,8 @@ export const buscaId = async(url: any, setDado: any, header: any) => {
     const answer = await api.get(url, header)
     setDado(answer.data)
 }
+
+export const buscaCategoria = async(url:any, setDado: any, header: any) => {
+    const answer = await api.get(url, header)
+    setDado(answer.data)
+}

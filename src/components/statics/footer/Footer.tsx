@@ -18,9 +18,9 @@ function Footer() {
                     <h3 className="col-title">Info</h3>
                     <nav className="col-list">
                         <ul>
-                            <li><a href="#">Sobre nós</a></li>
-                            <li><a href="#">Nossos serviços</a></li>
-                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="/aboutus">Sobre nós</a></li>
+                            <li><a href="/aboutus#section1">Nossos serviços</a></li>
+                            <li><a href="/aboutus#section3">Política de privacidade</a></li>
                         </ul>
                     </nav>
                 </span>
@@ -29,9 +29,9 @@ function Footer() {
                     <h3 className="col-title">Dúvidas</h3>
                     <nav className="col-list">
                         <ul>
-                            <li><a href="#">Perguntas Frequentes</a></li>
-                            <li><a href="#">Como funciona</a></li>
-                            <li><a href="#">Opções de pagamento</a></li>
+                            <li><a href="/aboutus">Perguntas Frequentes</a></li>
+                            <li><a href="/aboutus#section3">Como funciona</a></li>
+                            <li><a href="/aboutus">Opções de pagamento</a></li>
                         </ul>
                     </nav>
                 </span>
@@ -40,9 +40,9 @@ function Footer() {
                     <h3 className="col-title">Atendimento</h3>
                     <nav className="col-list">
                         <ul>
-                            <li><a href="#">Fale conosco</a></li>
-                            <li><a href="#">Central de ajuda</a></li>
-                            <li><a href="#">Seja um fornecedor</a></li>
+                            <li><a href="/providers">Fale conosco</a></li>
+                            <li><a href="/providers">Central de ajuda</a></li>
+                            <li><a href="/providers">Seja um fornecedor</a></li>
                         </ul>
                     </nav>
                 </span>

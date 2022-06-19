@@ -7,7 +7,7 @@ function TextAboutUs() {
         <>
             <main id="about">
 
-                <section className='Section1'>
+                <section id='section1' className='Section1'>
                     <div className='text-right'>
                         <h2>QUEM SOMOS?</h2>
                         <p>Somos uma e-commerce sem fins lucrativos, focada em auxiliar os pequenos e médios produtores de orgânicos, bem como no arrecadamento de fundos para solucionar as problemáticas da fome, da desnutrição e agroeconomia seguindo os parâmetros dos objetivos da ods 2 da ONU: Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura   sustentável.</p>
@@ -24,7 +24,7 @@ function TextAboutUs() {
 
                 </section>
 
-                <section className='Section3'>
+                <section id='section3' className='Section3'>
                     <div className='text-right'>
                         <h2>COMO SURGIU A IDEIA?</h2>
                         <p>O surgimento do greeniverse se deu através de ideias de integrantes do grupo 1 da primeira turma .Net no projeto integrador no Bootcamp da Generation Brasil com o intuito de sanar as necessidades do objetivo 2 da ONU.</p>

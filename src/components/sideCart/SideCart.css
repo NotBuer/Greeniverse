@@ -41,7 +41,8 @@
 } 
 
 .modalCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 100px;
-    padding-left: 91px;
-    
 }

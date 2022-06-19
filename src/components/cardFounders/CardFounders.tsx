@@ -94,6 +94,8 @@ export default function CardsFounders() {
             </Typography>
             <Typography variant="body2" color="text.secondary">
               23 anos, Desenvolvedor .NET FullStack Jr, com experiência na área.
+              <a href=''><LinkedInIcon /></a>
+              <a href=''><GitHubIcon /></a>
             </Typography>
           </CardContent>
         </CardActionArea>

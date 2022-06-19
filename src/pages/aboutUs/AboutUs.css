@@ -5,5 +5,12 @@
     align-items: center;
     justify-content: flex-start;
     background-color: #F6F6F6;
-    border-radius: 7px;
+    border-radius: 15px;
+    padding-left: 25px;
+    margin: 50px;
+}
+
+.cardsFounders{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }

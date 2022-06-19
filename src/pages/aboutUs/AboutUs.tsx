@@ -11,7 +11,9 @@ function AboutUs() {
 
                 <Navbar />
                 <TextAboutUs />
+                <section className='cardsFounders'>
                 <CardsFounders />
+                </section>
             </main>
 
         </>

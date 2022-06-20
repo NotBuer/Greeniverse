@@ -4,7 +4,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    height: 300px;
+    height: 340px;
     background-color:azure;
     border: 2px solid #000;
     box-shadow: 24;
@@ -111,4 +111,17 @@ color: #fff;
 .bt-MD:hover{
     background: var(--green);
     color: #fff;
+  }
+
+  .textGcoins{
+    display: flex;
+    font-size: 15px;
+  }
+
+  .textGcoins1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 116px;
+    padding-left: 35px;
   }

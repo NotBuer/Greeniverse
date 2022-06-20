@@ -34,7 +34,7 @@ function Navbar() {
     function goLogout() {
         dispatch(addToken(''));
         setId('')
-        toast.info('Usuario deslogado', {
+        toast.info('Você foi deslogado!', {
             position: "top-right",
             autoClose: 2000,
             hideProgressBar: false,

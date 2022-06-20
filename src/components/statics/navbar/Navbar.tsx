@@ -1,11 +1,8 @@
 import { Console } from 'console';
-import React, { useState, ChangeEvent } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useLocalStorage from 'react-use-localstorage';
-import { addToken } from '../../../store/tokens/actions';
-import { TokenState } from '../../../store/tokens/tokenReducer';
 import SideCart from '../../sideCart/SideCart';
 import './Navbar.css';
 
@@ -13,11 +10,8 @@ function Navbar() {
 
     let navigate = useNavigate();
     const [menuActive, setMenuActive] = useState(false)
-    const [id, setId] = useLocalStorage('id');
-    const dispatch = useDispatch();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
+    const [token, setToken] = useLocalStorage('token');
+
 
     function showMenu() {
         setMenuActive(true)
@@ -32,8 +26,7 @@ function Navbar() {
     }
 
     function goLogout() {
-        dispatch(addToken(''));
-        setId('')
+        setToken('')
         toast.info('Usuario deslogado', {
             position: "top-right",
             autoClose: 2000,
@@ -48,7 +41,7 @@ function Navbar() {
         navigate('/')
     }
 
-        if (token != "") {
+        if (token !== "") {
             return (
 
                 <nav id='navbar'>
@@ -59,7 +52,7 @@ function Navbar() {
         
                     <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
                         <Link to="/home">Home</Link>
-                        <a href="/home#features">Benefícios</a>
+                        <a href="#features">Benefícios</a>
                         <a href="/allproducts">Produtos</a>
                         <Link to="/providers">Seja um fornecedor</Link>
                         <Link to="/aboutus">Sobre nós</Link>
@@ -106,7 +99,7 @@ function Navbar() {
         
                     <section className={`${menuActive === true ? 'active' : ''}`} id='menu'>
                         <Link to="/home">Home</Link>
-                        <a href="/home#features">Benefícios</a>
+                        <a href="#features">Benefícios</a>
                         <a href="/allproducts">Produtos</a>
                         <Link to="/providers">Seja um fornecedor</Link>
                         <Link to="/aboutus">Sobre nós</Link>

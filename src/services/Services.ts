@@ -7,7 +7,7 @@ export const api = axios.create({
 
 export const login = async(url: any, info: any, setDado: any) => {
     const answer = await api.post(url, info)
-    setDado(answer.data.token)
+    setDado('Bearer ' + answer.data.token)
 }
 
 export const registerUser = async(url: any, info: any, setDado: any) => {

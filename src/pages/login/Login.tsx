@@ -11,13 +11,14 @@ import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/actions';
 import { toast } from 'react-toastify';
+import useLocalStorage from 'react-use-localstorage';
 
 function Login() {
 
     let navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const [token, setToken] = useState('');
+    const [token, setToken] = useLocalStorage('token');
 
     /* Local storage no longer supported, now we are using redux. So
        replace everywhere in the project that still using the local
@@ -72,7 +73,6 @@ function Login() {
 
     useEffect(() => {
         if (token !== '') {
-            dispatch(addToken(token));
             navigate('/Home');
         }
     }, [token, navigate]);

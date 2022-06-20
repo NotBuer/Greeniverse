@@ -59,7 +59,7 @@ The Greeniverse website makes the connection of small and medium producers to co
   </tr>
   <tr>
   <td align="center"><a href="https://github.com/MuriloAGama"><img style="border-radius: 50%;" src="https://i.imgur.com/OJf3yYa.png" width="100px;" alt="Murilo"/><br /><sub><b>Murilo Gama</b></sub></a><br /><a href="https://github.com/MuriloAGama" title="github">🐶</a></td>
-    <td align="center"><a href="https://github.com/NotBuer"><img style="border-radius: 50%;" src="" width="100px;" alt="Rodrigo"/><br /><sub><b>Rodrigo França</b></sub></a><br /><a href="https://github.com/NotBuer" title="github">👨‍🚀</a></td>
+    <td align="center"><a href="https://github.com/NotBuer"><img style="border-radius: 50%;" src="https://imgur.com/TnwuS4S" width="100px;" alt="Rodrigo"/><br /><sub><b>Rodrigo França</b></sub></a><br /><a href="https://github.com/NotBuer" title="github">👨‍🚀</a></td>
     <td align="center"><a href="https://github.com/cateldev"><img style="border-radius: 50%;" src="https://i.imgur.com/e2BQVgT.jpeg" width="100px;" alt="Catel"/><br /><sub><b>Matheus Catel</b></sub></a><br /><a href="https://i.imgur.com/e2BQVgT.jpg" title="github">🐻</a></td>
     </tr>
 </table

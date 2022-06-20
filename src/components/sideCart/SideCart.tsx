@@ -13,16 +13,15 @@ import BasicModal from '../payment/modal/Modal';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokenReducer';
 import { useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 
 type Anchor = 'right';
 
 export default function SideCart() {
 
     let navigate = useNavigate();
+    const [token, setToken] = useLocalStorage('token');
     const { cart, updateProductAmount, removeProduct } = useCart();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
 
     function handleProductIncrement(product: CartProduct) {
         const IncrementArguments = {
@@ -45,7 +44,7 @@ export default function SideCart() {
     }
 
     function handleClick() {
-        if (token == "") {
+        if (token === "") {
             toast.error('Você precisa estar logado para finalizar a compra!', {
                 position: "top-right",
                 autoClose: 2000,

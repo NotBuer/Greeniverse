@@ -61,13 +61,7 @@ function Navbar() {
                     <section id='icons'>
                         <label className="fas fa-bars" id="menu-btn" onClick={showMenu}></label>
         
-                        <label htmlFor='checkbox_search' className="fas fa-search" id="search-btn">
-                            <input type="checkbox" name="checkbox_search" id="checkbox_search" />
-                            <form id='search-form'>
-                                <input type="search" id='search-box' placeholder='buscar produtos...' />
-                                <label htmlFor="searc-box" className='fas fa-search'></label>
-                            </form>
-                        </label>
+
         
                         <label className="fas fa-shopping-cart" id="cart-btn">
                             <div>
@@ -107,14 +101,6 @@ function Navbar() {
         
                     <section id='icons'>
                         <label className="fas fa-bars" id="menu-btn" onClick={showMenu}></label>
-        
-                        <label htmlFor='checkbox_search' className="fas fa-search" id="search-btn">
-                            <input type="checkbox" name="checkbox_search" id="checkbox_search" />
-                            <form id='search-form'>
-                                <input type="search" id='search-box' placeholder='buscar produtos...' />
-                                <label htmlFor="searc-box" className='fas fa-search'></label>
-                            </form>
-                        </label>
         
                         <label className="fas fa-shopping-cart" id="cart-btn">
                             <div>

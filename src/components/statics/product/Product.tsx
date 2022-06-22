@@ -29,7 +29,7 @@ function Product() {
   }, [valueFeira, valueOrdenar, valuePesquisa]);
 
   const handleChangeFeira = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValueFeira((event.target as HTMLInputElement).value);
+    setValueFeira((event.target as HTMLInputElement).defaultValue);
   };
 
   const handleChangeOrdenar = (event: React.ChangeEvent<HTMLInputElement>) => {

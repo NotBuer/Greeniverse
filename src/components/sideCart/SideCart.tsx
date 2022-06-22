@@ -121,9 +121,11 @@ export default function SideCart() {
                 ))}
                 <Divider />
             </div>
-            <button className='btn2' type='submit' value='submit' onClick={handleClick}>
+             <div className='btFinish1'><button className='btn2' type='submit' value='submit' onClick={handleClick}>
                 Finalizar Compra
             </button>
+            </div>
+            
             <div className='modalCart'>
                 <BasicModal />
             </div>

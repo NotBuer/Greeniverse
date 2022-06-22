@@ -21,7 +21,6 @@
 .btn2{
     height: 43px;
     width: 200px;
-    padding-left: 30px;
     text-align: center;
     font-size: 16px;
     border-radius: 8px;
@@ -33,6 +32,13 @@
 .btn2:hover{
     background: var(--green);
     color: #fff;
+  }
+
+  .btFinish1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
   }
 
 .btnDelete{

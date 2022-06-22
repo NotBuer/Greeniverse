@@ -60,7 +60,15 @@
     padding-right: 20px;
 }
 
-.divBtn {
-    display: flex;
-    justify-content: flex-end;
+
+
+.btFinish{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 45px;
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  
 }

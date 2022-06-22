@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -45,14 +44,14 @@ function BasicModal() {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             <p>Doe para quem precisa e receba nossa moeda para trocar por descontos e cupons!
-              Doando recebe Gcoins para trocar por descontos em próximas compras e 
+              
             </p>
 
             <div className='bt-donation'>
               
-            <button type="submit" value="doa10" className="btn-doa10"  >R$ 10 <a className='iconDoa10'><FavoriteBorderIcon style={{ fontSize: 30, color: "red" }} onClick={handleClick} /></a></button >
-            <button type="submit" value="doa10" className="btn-doa20"  >R$ 20<a className='iconDoa20'><FavoriteBorderIcon style={{ fontSize: 30, color: "red" }} onClick={handleClick} /></a></button>
-            <button type="submit" value="doa10" className="btn-doa30"  >R$ 30<a className='iconDoa30'><FavoriteBorderIcon style={{ fontSize: 30, color: "red" }} onClick={handleClick} /></a></button>
+            <button type="submit" value="doa10" className="btn-doa10" > R$ 10 <a className='iconDoa10'><FavoriteBorderIcon style={{ fontSize: 30, color: "red" }} onClick={handleClick} /></a></button >
+            <button type="submit" value="doa10" className="btn-doa20" > R$ 20 <a className='iconDoa20'><FavoriteBorderIcon style={{ fontSize: 30, color: "red" }} onClick={handleClick} /></a></button>
+            <button type="submit" value="doa10" className="btn-doa30" > R$ 30 <a className='iconDoa30'><FavoriteBorderIcon style={{ fontSize: 30, color: "red" }} onClick={handleClick} /></a></button>
             </div>
             
             <div className='textGcoins'>

@@ -3,15 +3,10 @@ import { Drawer, Button, Divider, Badge, IconButton, Typography } from '@materia
 import { CartProduct, useCart } from '../../hooks/useCart';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import DeleteIcon from '@material-ui/icons/Delete';
 import "./SideCart.css";
-import Product from '../statics/product/Product';
-import CardProducts from '../cardProducts/CardProducts';
 import { toast } from 'react-toastify';
 import BasicModal from '../payment/modal/Modal';
-import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokenReducer';
 import { useNavigate } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 
@@ -126,9 +121,9 @@ export default function SideCart() {
                 ))}
                 <Divider />
             </div>
-            <Button className='btn2' type='submit' value='submit' onClick={handleClick}>
+            <button className='btn2' type='submit' value='submit' onClick={handleClick}>
                 Finalizar Compra
-            </Button>
+            </button>
             <div className='modalCart'>
                 <BasicModal />
             </div>

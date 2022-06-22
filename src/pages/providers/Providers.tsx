@@ -26,12 +26,12 @@ function Providers() {
         <section className='provider-section'>
           <h1 className='provider-title'>Enviar uma <span>solicitação</span></h1>
           <form action="https://formsubmit.co/greeniverse.project@gmail.com" method="POST">
-            <input type="email" name="email" placeholder="email" required />
-            <input type="text" name="cnpj" placeholder="cnpj" required />
-            <input type="text" name="assunto" placeholder="assunto" required />
-            <input type="text" name="descricao" placeholder="descricao" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="cnpj" placeholder="Cnpj" required />
+            <input type="text" name="assunto" placeholder="Assunto" required />
+            <textarea name="descricao" placeholder="Descrição" required />
             <input type="hidden" name="_captcha" value="false"></input>
-            <input type="hidden" name="_next" value="http://localhost:3000/Home"></input>
+            <input type="hidden" name="_next" value="https://integration-project-front.vercel.app//Home"></input>
             <p className='provider-p'>
               Assim que for possível um Fundador(a) da Greeniverse responderá a sua solicitação.</p>
             <p className='provider-p2'>Desde já agradecemos.
@@ -39,8 +39,8 @@ function Providers() {
             <button type="submit">Enviar</button>
           </form>
         </section>
-
       </main>
+      <Footer />
     </>
   )
 }

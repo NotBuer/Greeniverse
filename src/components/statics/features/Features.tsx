@@ -13,7 +13,7 @@ function Features() {
 
         <div className="box">
           <img src="https://i.imgur.com/0E01fuQ.png" alt="" />
-          <h3>Fresco e organico</h3>
+          <h3>Fresco e orgânico</h3>
           <p>Nossos produtos são escolhidos a dedo para trazer o que um produto orgânico pode proporcionar.</p>
         </div>
 

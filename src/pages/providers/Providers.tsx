@@ -36,7 +36,7 @@ function Providers() {
               Assim que for possível um Fundador(a) da Greeniverse responderá a sua solicitação.</p>
             <p className='provider-p2'>Desde já agradecemos.
             </p>
-            <button type="submit">Send</button>
+            <button type="submit">Enviar</button>
           </form>
         </section>
 

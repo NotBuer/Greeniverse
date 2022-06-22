@@ -29,7 +29,7 @@ function Finishing() {
                     <li>Total</li>
                     </ul>
                     <div className="divBtn">
-                    <button type="submit" value="Finishing" className="btn">Finalizar Pedido</button>
+                    <button className='btFinish' type="submit" value="Finishing" >Finalizar Pedido</button>
                     </div>
                 </article>
 

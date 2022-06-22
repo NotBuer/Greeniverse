@@ -37,7 +37,12 @@ export default function CardProducts() {
     if (products.length < 1) {
         return (
             <>
-                <h1>Não contem produto</h1>
+            <div className='NotProduct'>
+            <h1 className="h1NotProduct"> Desculpe, não possuímos o produto mencionado em estoque!  <span className='spanNotProduct'>Qualquer dúvida ficamos a disposição, obrigado!</span> </h1>
+            <img className='imgNotProduct' src="https://i.imgur.com/ptzY2Mh.png" alt="logo" />
+            <p className='pNotProduct'>@Equipe Greeniverse</p>
+            </div>
+                
             </>
         )
     }

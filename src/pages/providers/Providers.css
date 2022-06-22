@@ -70,9 +70,19 @@
   margin: 10px;
   width: 400px;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 30px;
-  font-size: 20px;
+  font-size: 14px;
+}
+
+.provider-section form textarea {
+  margin: 10px;
+  width: 400px;
+  height: 90px;
+  border-radius: 10px;
+  padding-left: 30px;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
 .provider-section form button {

@@ -12,31 +12,34 @@ function Providers() {
 
   let navigate = useNavigate();
 
-  function handleClick () {
+  function handleClick() {
     toast.success('Mensagem encaminhada com Sucesso!!', {
-        theme:"colored"
+      theme: "colored"
     })
-      navigate('/Home');
- }
- 
+    navigate('/Home');
+  }
+
   return (
     <>
       <Navbar />
       <main className='provider-body'>
         <section className='provider-section'>
           <h1 className='provider-title'>Enviar uma <span>solicitação</span></h1>
-          <form className='provider-form'>
-            <input type="email" name="E-mail" className='provider-input' autoComplete="off" placeholder="E-mail" />
-            <input type="cnpj" name="cnpj" className='provider-input' autoComplete="off" placeholder="CNPJ" />
-            <input type="assunto" name="assunto" className='provider-input' autoComplete="off" placeholder="Assunto" />
-            <input type="descrição" name="descrição" className='provider-input2' autoComplete="off" placeholder="Descrição" />
+          <form action="https://formsubmit.co/greeniverse.project@gmail.com" method="POST">
+            <input type="email" name="email" placeholder="email" required />
+            <input type="text" name="cnpj" placeholder="cnpj" required />
+            <input type="text" name="assunto" placeholder="assunto" required />
+            <input type="text" name="descricao" placeholder="descricao" required />
+            <input type="hidden" name="_captcha" value="false"></input>
+            <input type="hidden" name="_next" value="http://localhost:3000/Home"></input>
+            <p className='provider-p'>
+              Assim que for possível um Fundador(a) da Greeniverse responderá a sua solicitação.</p>
+            <p className='provider-p2'>Desde já agradecemos.
+            </p>
+            <button type="submit">Send</button>
           </form>
-          <p className='provider-p'>
-            Assim que for possível um Fundador(a) da Greeniverse responderá a sua solicitação.</p>
-          <p className='provider-p2'>Desde já agradecemos.
-          </p>
-          <button type='submit' className='btn5' onClick={handleClick} >Enviar </button>
         </section>
+
       </main>
     </>
   )

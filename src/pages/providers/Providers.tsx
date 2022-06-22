@@ -31,7 +31,7 @@ function Providers() {
             <input type="text" name="assunto" placeholder="Assunto" required />
             <textarea name="descricao" placeholder="Descrição" required />
             <input type="hidden" name="_captcha" value="false"></input>
-            <input type="hidden" name="_next" value="https://greeniverse.vercel.app/home"></input>
+            <input type="hidden" name="_next" value="https://greeniverse.vercel.app/Home"></input>
             <p className='provider-p'>
               Assim que for possível um Fundador(a) da Greeniverse responderá a sua solicitação.</p>
             <p className='provider-p2'>Desde já agradecemos.
